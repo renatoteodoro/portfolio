@@ -44,10 +44,10 @@ EXPERIÊNCIAS:
 6. Dígitro Tecnologia (Nov/2005–Ago/2012): Técnico Eletrônica. Suporte engenharia, projetos energia solar.
 
 PROJETOS DE SOFTWARE:
-1. BarberZap: FastAPI, LangChain, OpenAI, ChromaDB, Evolution API, Google Calendar, Docker. Chatbot de agendamento para barbearia via WhatsApp — RAG, agendamento em linguagem natural, sincronização com Google Calendar, deploy Docker Compose.
+1. Portfólio: Django 5, Tailwind CSS, OpenAI GPT-4o-mini, WhiteNoise, Python, JavaScript. Site portfólio profissional com chatbot de IA integrado, dark/light mode, timeline de experiências com fotos reais e formulário de contato via SMTP.
 2. WathsBotApp: FastAPI, LangChain, OpenAI, ChromaDB, Redis, Evolution API, Playwright, Docker. Assistente RAG para WhatsApp com debounce inteligente, memória de sessão via Redis, scraping automático de base de conhecimento a cada 30 dias.
-3. ADA: Django, OpenAI GPT-4o-mini, Whisper (STT), TTS, Playwright, ReportLab. Assistente virtual multi-modal desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). Voz bidirecional, acessibilidade com VLibras, painel admin com exportação CSV/Excel/PDF.
-4. PlannerEdu: Django 5.2, PostgreSQL, Docker, Chart.js, SortableJS, Bootstrap 5. Plataforma de gestão de produção educacional com calendário anual, dashboard analítico com KPIs, Kanban drag-and-drop e sistema multi-usuário com permissões.
+3. ADA: Django, OpenAI GPT-4o-mini, Whisper (STT), TTS, Playwright, ReportLab. Assistente virtual multi-modal desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). Voz bidirecional, acessibilidade com VLibras, painel admin com exportação CSV/Excel/PDF. Deploy na AWS.
+4. PlannerEdu: Django 5.2, PostgreSQL, Docker, Chart.js, SortableJS, Bootstrap 5. Plataforma de gestão de produção educacional com calendário anual, dashboard analítico com KPIs, Kanban drag-and-drop e sistema multi-usuário com permissões. Deploy na IONOS.
 5. Sistema Supervisório QTA (IFSC): Arduino, ESP32, MQTT, Django, PostgreSQL, ApexCharts. Monitoramento em tempo real de Quadro de Transferência Automática — ESP32 coleta dados via sensores, publica via MQTT, backend Django persiste e exibe em dashboard com gráficos em tempo real.
 6. Beton Dekor: Django 6.0, htmx, Cloudinary, PostgreSQL, Docker, Gunicorn. Site institucional com catálogo de produtos para empresa de revestimentos decorativos, replicando layout Figma. Galeria com Cloudinary, formulário de contato SMTP, responsivo e deploy na Hostinger.
 
@@ -80,27 +80,26 @@ Hardware/IoT: Arduino (85%), ESP32 (80%), MQTT (75%), C/C++ (70%)
 PROJETOS = [
     {
         'id': 1,
-        'titulo': 'BarberZap — Agendamento via WhatsApp',
+        'titulo': 'Portfólio — Site Pessoal com Chatbot IA',
         'descricao': (
-            'Chatbot de agendamento para barbearia integrado ao WhatsApp via Evolution API. '
-            'O usuário agenda, cancela e pesquisa horários em linguagem natural. '
-            'IA com RAG (ChromaDB) responde dúvidas do negócio; Google Calendar API '
-            'sincroniza os eventos. Deploy completo com Docker Compose.'
+            'Site portfólio profissional desenvolvido com Django 5, Tailwind CSS e chatbot de IA '
+            'integrado. O assistente usa OpenAI GPT-4o-mini quando disponível, com fallback por '
+            'palavras-chave. Dark/light mode persistente, seções de projetos, timeline de '
+            'experiências com fotos reais e formulário de contato via SMTP.'
         ),
-        'stack': ['FastAPI', 'LangChain', 'OpenAI', 'ChromaDB', 'Evolution API', 'Google Calendar', 'Docker'],
+        'stack': ['Django 5', 'Tailwind CSS', 'OpenAI GPT-4o-mini', 'WhiteNoise', 'Python', 'JavaScript'],
         'stack_cores': {
-            'FastAPI': 'bg-teal-700',
-            'LangChain': 'bg-green-700',
-            'OpenAI': 'bg-slate-600',
-            'ChromaDB': 'bg-purple-700',
-            'Evolution API': 'bg-green-800',
-            'Google Calendar': 'bg-blue-700',
-            'Docker': 'bg-blue-800',
+            'Django 5': 'bg-green-700',
+            'Tailwind CSS': 'bg-teal-700',
+            'OpenAI GPT-4o-mini': 'bg-slate-600',
+            'WhiteNoise': 'bg-blue-800',
+            'Python': 'bg-blue-700',
+            'JavaScript': 'bg-yellow-700',
         },
-        'github_url': '#projetos',
-        'demo_url': '#projetos',
+        'github_url': 'https://github.com/renatoteodoro/portfolio',
+        'demo_url': '#hero',
         'destaque': True,
-        'icone': 'fa-robot',
+        'icone': 'fa-briefcase',
     },
     {
         'id': 2,
@@ -122,8 +121,8 @@ PROJETOS = [
             'Playwright': 'bg-indigo-700',
             'Docker': 'bg-blue-800',
         },
-        'github_url': '#projetos',
-        'demo_url': '#projetos',
+        'github_url': 'https://github.com/renatoteodoro/WathsBotApp',
+        'demo_url': '',
         'destaque': True,
         'icone': 'fa-comments',
     },
@@ -134,9 +133,9 @@ PROJETOS = [
             'Assistente conversacional com IA desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). '
             'Suporte a voz bidirecional via Whisper (STT) e TTS, '
             'acessibilidade com VLibras (Libras), scraping automático com Playwright, '
-            'e painel administrativo com exportação em CSV, Excel e PDF.'
+            'e painel administrativo com exportação em CSV, Excel e PDF. Deploy na AWS.'
         ),
-        'stack': ['Django', 'OpenAI GPT-4o-mini', 'Whisper', 'TTS', 'Playwright', 'ReportLab'],
+        'stack': ['Django', 'OpenAI GPT-4o-mini', 'Whisper', 'TTS', 'Playwright', 'ReportLab', 'AWS'],
         'stack_cores': {
             'Django': 'bg-green-700',
             'OpenAI GPT-4o-mini': 'bg-slate-600',
@@ -144,6 +143,7 @@ PROJETOS = [
             'TTS': 'bg-yellow-700',
             'Playwright': 'bg-indigo-700',
             'ReportLab': 'bg-red-700',
+            'AWS': 'bg-amber-700',
         },
         'github_url': 'https://github.com/renatoteodoro/ADA',
         'demo_url': 'https://projetoada.duckdns.org/chat/',
@@ -157,9 +157,9 @@ PROJETOS = [
             'Plataforma web completa para planejamento anual de produção de conteúdo educacional. '
             'Calendário interativo com feriados brasileiros, dashboard analítico com KPIs e '
             'gráficos (Chart.js), sistema Kanban drag-and-drop para cursos EAD/presencial '
-            'e controle multi-usuário com permissões granulares. Deploy com Docker.'
+            'e controle multi-usuário com permissões granulares. Deploy na IONOS com Docker.'
         ),
-        'stack': ['Django 5.2', 'PostgreSQL', 'Docker', 'Chart.js', 'SortableJS', 'Bootstrap 5'],
+        'stack': ['Django 5.2', 'PostgreSQL', 'Docker', 'Chart.js', 'SortableJS', 'Bootstrap 5', 'IONOS'],
         'stack_cores': {
             'Django 5.2': 'bg-green-700',
             'PostgreSQL': 'bg-blue-800',
@@ -167,8 +167,9 @@ PROJETOS = [
             'Chart.js': 'bg-pink-700',
             'SortableJS': 'bg-yellow-700',
             'Bootstrap 5': 'bg-purple-700',
+            'IONOS': 'bg-red-700',
         },
-        'github_url': '#projetos',
+        'github_url': 'https://github.com/renatoteodoro/planner_edu',
         'demo_url': 'https://planejamentoconteudo.website/admin/login/?next=/',
         'destaque': False,
         'icone': 'fa-calendar-check',
@@ -191,8 +192,9 @@ PROJETOS = [
             'PostgreSQL': 'bg-blue-800',
             'ApexCharts': 'bg-orange-700',
         },
-        'github_url': '#projetos',
-        'demo_url': '#projetos',
+        'github_url': 'https://github.com/renatoteodoro/SUPERVISORIO',
+        'demo_url': '',
+        'pdf_url': 'core/files/trabalho-supervisorio.pdf',
         'destaque': False,
         'icone': 'fa-microchip',
     },
@@ -215,7 +217,7 @@ PROJETOS = [
             'Gunicorn': 'bg-green-800',
             'WhiteNoise': 'bg-slate-600',
         },
-        'github_url': '#projetos',
+        'github_url': '',
         'demo_url': 'https://www.betondekor.com.br/',
         'destaque': False,
         'icone': 'fa-store',
@@ -556,12 +558,12 @@ def _keyword_response(message: str) -> str:
 
     if any(w in msg for w in ['projeto', 'projetos', 'software', 'sistema']):
         return (
-            'Renato desenvolveu 4 projetos principais: '
-            '(1) BarberZap — chatbot de agendamento para WhatsApp com RAG, Google Calendar e Docker; '
+            'Renato desenvolveu 6 projetos principais: '
+            '(1) Portfólio — site pessoal com chatbot de IA, dark/light mode e timeline de experiências (Django 5, Tailwind CSS); '
             '(2) WathsBotApp — assistente RAG para WhatsApp com Redis, Playwright e auto-atualização da base; '
             '(3) ADA — assistente multi-modal com voz (Whisper/TTS), acessibilidade e painel admin, '
-            'desenvolvido no Hackathon 2025 (Senac/SC); '
-            '(4) PlannerEdu — plataforma Django de gestão educacional com Kanban, dashboard analítico e Docker; '
+            'desenvolvido no Hackathon 2025 (Senac/SC), deploy na AWS; '
+            '(4) PlannerEdu — plataforma Django de gestão educacional com Kanban, dashboard analítico, deploy na IONOS; '
             '(5) Sistema Supervisório QTA (IFSC) — monitoramento IoT em tempo real com ESP32/MQTT/Django; '
             '(6) Beton Dekor — site institucional com catálogo Cloudinary e deploy na Hostinger com Django 6.'
         )
