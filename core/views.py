@@ -97,7 +97,7 @@ PROJETOS = [
             'JavaScript': 'bg-yellow-700',
         },
         'github_url': 'https://github.com/renatoteodoro/portfolio',
-        'demo_url': '#hero',
+        'demo_url': 'https://portfolio-renato.fly.dev/',
         'destaque': True,
         'icone': 'fa-briefcase',
     },
