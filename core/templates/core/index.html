@@ -1,0 +1,899 @@
+{% extends 'core/base.html' %}
+{% load static %}
+
+{% block title %}Renato Teodoro — Desenvolvedor Python & IA | Portfólio{% endblock %}
+
+{% block content %}
+
+<!-- =============================================================
+     SEÇÃO HERO
+============================================================= -->
+<section id="hero" class="min-h-screen hero-pattern dark:bg-slate-900 bg-gray-50 flex items-center">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-20 w-full">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+
+            <!-- Coluna esquerda: texto -->
+            <div>
+                <!-- Badge status -->
+                <div class="inline-flex items-center gap-2 dark:bg-blue-950/60 bg-blue-50 border dark:border-blue-800/50 border-blue-200 rounded-full px-4 py-1.5 mb-6">
+                    <span class="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
+                    <span class="dark:text-blue-300 text-blue-600 text-sm font-medium">Disponível para projetos</span>
+                </div>
+
+                <!-- Nome -->
+                <h1 class="text-5xl sm:text-6xl font-black mb-3 leading-tight">
+                    <span class="dark:text-white text-gray-900">Renato</span><br>
+                    <span class="gradient-text">Teodoro</span>
+                </h1>
+
+                <!-- Subtítulo -->
+                <p class="text-xl sm:text-2xl text-blue-500 font-semibold mb-4">
+                    Desenvolvedor Python &amp; IA
+                </p>
+
+                <!-- Descrição -->
+                <p class="dark:text-slate-400 text-gray-600 text-base leading-relaxed mb-6 max-w-lg">
+                    Profissional com 25+ anos em telecomunicações, eletrônica e segurança eletrônica.
+                    Em transição para desenvolvimento de software e IA. Especialista em Django,
+                    LangChain, RAG e sistemas IoT com ESP32.
+                </p>
+
+                <!-- Badges de stack -->
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="px-3 py-1 text-xs font-semibold dark:bg-blue-950/60 bg-blue-100 dark:text-blue-300 text-blue-700 border dark:border-blue-800/40 border-blue-200 rounded-full">Python</span>
+                    <span class="px-3 py-1 text-xs font-semibold dark:bg-green-950/60 bg-green-100 dark:text-green-300 text-green-700 border dark:border-green-800/40 border-green-200 rounded-full">Django</span>
+                    <span class="px-3 py-1 text-xs font-semibold dark:bg-purple-950/60 bg-purple-100 dark:text-purple-300 text-purple-700 border dark:border-purple-800/40 border-purple-200 rounded-full">LangChain</span>
+                    <span class="px-3 py-1 text-xs font-semibold dark:bg-slate-700 bg-gray-200 dark:text-slate-300 text-gray-700 border dark:border-slate-600 border-gray-300 rounded-full">OpenAI</span>
+                    <span class="px-3 py-1 text-xs font-semibold dark:bg-teal-950/60 bg-teal-100 dark:text-teal-300 text-teal-700 border dark:border-teal-800/40 border-teal-200 rounded-full">ESP32 / IoT</span>
+                </div>
+
+                <!-- Botões CTA -->
+                <div class="flex flex-wrap gap-3 mb-7">
+                    <a href="#projetos"
+                        class="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-lg transition-all hover:shadow-lg hover:shadow-blue-500/25 hover:-translate-y-0.5 text-sm">
+                        <i class="fas fa-rocket text-xs"></i>
+                        Ver Projetos
+                    </a>
+                    <a href="#contato"
+                        class="inline-flex items-center gap-2 dark:bg-slate-800 bg-white dark:hover:bg-slate-700 hover:bg-gray-100 dark:text-white text-gray-800 font-semibold px-5 py-2.5 rounded-lg transition-all border dark:border-slate-700 border-gray-200 hover:-translate-y-0.5 text-sm">
+                        <i class="fas fa-paper-plane text-xs text-blue-500"></i>
+                        Falar Comigo
+                    </a>
+                    <a href="{% static 'core/files/curriculo-renato-teodoro.pdf' %}" download="Curriculo-Renato-Teodoro.pdf"
+                        class="inline-flex items-center gap-2 dark:bg-slate-800 bg-white dark:hover:bg-slate-700 hover:bg-gray-100 dark:text-white text-gray-800 font-semibold px-5 py-2.5 rounded-lg transition-all border dark:border-slate-700 border-gray-200 hover:-translate-y-0.5 text-sm">
+                        <i class="fas fa-file-arrow-down text-xs text-green-500"></i>
+                        Baixar CV
+                    </a>
+                </div>
+
+                <!-- Infos de contato rápido -->
+                <div class="flex flex-wrap gap-x-5 gap-y-2">
+                    <div class="flex items-center gap-1.5 dark:text-slate-400 text-gray-500 text-sm">
+                        <i class="fas fa-map-marker-alt text-blue-500 text-xs"></i>
+                        Palhoça/SC – Brasil
+                    </div>
+                    <a href="mailto:renatoteodoro2@gmail.com" class="flex items-center gap-1.5 dark:text-slate-400 text-gray-500 hover:text-blue-500 text-sm transition-colors">
+                        <i class="fas fa-envelope text-blue-500 text-xs"></i>
+                        renatoteodoro2@gmail.com
+                    </a>
+                    <a href="tel:+5548996404676" class="flex items-center gap-1.5 dark:text-slate-400 text-gray-500 hover:text-blue-500 text-sm transition-colors">
+                        <i class="fas fa-phone text-blue-500 text-xs"></i>
+                        (48) 99640-4676
+                    </a>
+                </div>
+            </div>
+
+            <!-- Coluna direita: foto de perfil -->
+            <div class="flex justify-center lg:justify-end">
+                <div class="relative">
+                    <!-- Glow de fundo -->
+                    <div class="absolute inset-0 bg-gradient-to-br from-blue-600/20 to-purple-600/20 rounded-full blur-3xl scale-110"></div>
+
+                    <!-- Foto circular com borda animada -->
+                    <div class="relative w-56 h-56 sm:w-72 sm:h-72 rounded-full p-1"
+                        style="background: linear-gradient(135deg, #3b82f6, #8b5cf6, #3b82f6); background-size: 200% 200%; animation: borderSpin 3s linear infinite;">
+                        <div class="w-full h-full rounded-full overflow-hidden dark:bg-slate-800 bg-gray-200">
+                            <img src="{% static 'core/images/perfil.jpg' %}"
+                                alt="Renato Teodoro"
+                                class="w-full h-full object-cover"
+                                onerror="this.parentElement.innerHTML='<div class=\'w-full h-full flex items-center justify-center\'><span class=\'text-6xl font-black gradient-text\'>RT</span></div>'">
+                        </div>
+                    </div>
+
+                    <!-- Badge Python Dev -->
+                    <div class="absolute -top-2 -right-2 sm:-top-4 sm:-right-4 dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 rounded-xl px-3 py-2 shadow-lg">
+                        <div class="flex items-center gap-2">
+                            <i class="fab fa-python text-blue-400 text-lg"></i>
+                            <span class="dark:text-white text-gray-900 text-sm font-semibold">Python Dev</span>
+                        </div>
+                    </div>
+
+                    <!-- Badge IA -->
+                    <div class="absolute -bottom-2 -left-2 sm:-bottom-4 sm:-left-4 dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 rounded-xl px-3 py-2 shadow-lg">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-brain text-purple-400 text-lg"></i>
+                            <span class="dark:text-white text-gray-900 text-sm font-semibold">IA &amp; LangChain</span>
+                        </div>
+                    </div>
+
+                    <!-- Badge IoT -->
+                    <div class="absolute top-1/2 -translate-y-1/2 -left-4 sm:-left-8 dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 rounded-xl px-3 py-2 shadow-lg hidden sm:block">
+                        <div class="flex items-center gap-2">
+                            <i class="fas fa-microchip text-green-400 text-lg"></i>
+                            <span class="dark:text-white text-gray-900 text-sm font-semibold">IoT</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scroll indicator -->
+        <div class="flex justify-center mt-12">
+            <a href="#sobre" class="flex flex-col items-center gap-1 dark:text-slate-500 text-gray-400 hover:text-blue-500 transition-colors animate-bounce">
+                <span class="text-xs">Scroll</span>
+                <i class="fas fa-chevron-down text-xs"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<style>
+@keyframes borderSpin {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+</style>
+
+
+<!-- =============================================================
+     SEÇÃO SOBRE
+============================================================= -->
+<section id="sobre" class="py-20 dark:bg-slate-800/30 bg-gray-100/50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <!-- Cabeçalho -->
+        <div class="text-center mb-14">
+            <span class="text-blue-500 font-semibold text-sm uppercase tracking-widest">Quem sou</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Sobre Mim</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+
+            <!-- Esquerda: stats + stack -->
+            <div>
+                <!-- Stats -->
+                <div class="grid grid-cols-2 sm:grid-cols-4 gap-4 mb-7">
+                    <div class="text-center dark:bg-slate-800 bg-white rounded-xl p-4 border dark:border-slate-700 border-gray-200 shadow-sm">
+                        <div class="text-3xl font-black gradient-text">25+</div>
+                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Anos de Exp.</div>
+                    </div>
+                    <div class="text-center dark:bg-slate-800 bg-white rounded-xl p-4 border dark:border-slate-700 border-gray-200 shadow-sm">
+                        <div class="text-3xl font-black gradient-text">6+</div>
+                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Empresas</div>
+                    </div>
+                    <div class="text-center dark:bg-slate-800 bg-white rounded-xl p-4 border dark:border-slate-700 border-gray-200 shadow-sm">
+                        <div class="text-3xl font-black gradient-text">4</div>
+                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Projetos Dev</div>
+                    </div>
+                    <div class="text-center dark:bg-slate-800 bg-white rounded-xl p-4 border dark:border-slate-700 border-gray-200 shadow-sm">
+                        <div class="text-3xl font-black gradient-text">1</div>
+                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Startup</div>
+                    </div>
+                </div>
+
+                <!-- Stack principal -->
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-5 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <p class="dark:text-slate-300 text-gray-700 text-sm font-semibold mb-3">Stack principal:</p>
+                    <div class="flex flex-wrap gap-2">
+                        {% for tag in stack_principal %}
+                        <span class="px-3 py-1 dark:bg-blue-950/60 bg-blue-100 border dark:border-blue-800/40 border-blue-200 dark:text-blue-300 text-blue-700 text-xs rounded-full font-medium">
+                            {{ tag }}
+                        </span>
+                        {% endfor %}
+                    </div>
+                </div>
+
+                <!-- Formação -->
+                <div class="mt-5 dark:bg-slate-800 bg-white rounded-2xl p-5 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold mb-4 flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-blue-500"></i>
+                        Formação & Certificações
+                    </h3>
+                    <ul class="space-y-2.5">
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-circle-dot text-blue-500 text-xs mt-1.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">Especialização Computação Científica para a Indústria</p>
+                                <p class="dark:text-slate-500 text-gray-400 text-xs">IFSC — em andamento</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-circle-dot text-green-500 text-xs mt-1.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">Tecnólogo em Sistemas para Internet</p>
+                                <p class="dark:text-slate-500 text-gray-400 text-xs">Estácio de Sá — concluído</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-circle-dot text-purple-500 text-xs mt-1.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">PycodeBR Python Master</p>
+                                <p class="dark:text-slate-500 text-gray-400 text-xs">Python, Django, DRF, OpenAI/LangChain, AWS — 100h+, 450+ aulas</p>
+                            </div>
+                        </li>
+                        <li class="flex items-start gap-2">
+                            <i class="fas fa-circle-dot text-yellow-500 text-xs mt-1.5 flex-shrink-0"></i>
+                            <div>
+                                <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">Técnico em Eletrônica – SENAI (2007) | NR10 | NR35</p>
+                                <p class="dark:text-slate-500 text-gray-400 text-xs">Segurança em Eletricidade e Trabalho em Altura</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Direita: texto narrativo -->
+            <div class="space-y-5">
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-6 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-3 flex items-center gap-2">
+                        <i class="fas fa-route text-blue-500"></i>
+                        A Jornada
+                    </h3>
+                    <p class="dark:text-slate-300 text-gray-600 leading-relaxed text-sm">
+                        Com mais de 25 anos atuando em telecomunicações, eletrônica e segurança eletrônica,
+                        desenvolvi uma base técnica sólida em sistemas embarcados, redes e automação.
+                        Trabalhei em grandes empresas como Intelbras, Claro Brasil, Ezentis e FIESC-SENAI,
+                        além de empreender com serviços de segurança eletrônica — período no qual participei
+                        do <strong class="text-blue-500">Programa Nascer (FAPESC + SEBRAE/SC)</strong> com o projeto
+                        <strong class="text-purple-500">AccessFive</strong> — startup de IA para segurança industrial,
+                        detectando EPIs e zonas de risco em tempo real com câmeras CCTV e IoT.
+                    </p>
+                </div>
+
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-6 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-3 flex items-center gap-2">
+                        <i class="fas fa-crosshairs text-purple-500"></i>
+                        Foco Atual
+                    </h3>
+                    <p class="dark:text-slate-300 text-gray-600 leading-relaxed text-sm">
+                        Mergulhado no ecossistema de IA aplicada: construindo sistemas RAG com LangChain,
+                        integrando OpenAI API a aplicações Django e desenvolvendo agentes autônomos.
+                        Cursando Especialização em Computação Científica para a Indústria no IFSC.
+                        A interseção entre IoT, backend robusto e IA é onde os projetos mais
+                        interessantes acontecem.
+                    </p>
+                </div>
+
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-6 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-3 flex items-center gap-2">
+                        <i class="fas fa-handshake text-green-500"></i>
+                        O que ofereço
+                    </h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-start gap-2 text-sm">
+                            <i class="fas fa-check-circle text-green-500 flex-shrink-0 mt-0.5"></i>
+                            <span class="dark:text-slate-300 text-gray-600">APIs REST com Django e FastAPI, production-ready</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm">
+                            <i class="fas fa-check-circle text-green-500 flex-shrink-0 mt-0.5"></i>
+                            <span class="dark:text-slate-300 text-gray-600">Chatbots e assistentes inteligentes com LangChain/RAG</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm">
+                            <i class="fas fa-check-circle text-green-500 flex-shrink-0 mt-0.5"></i>
+                            <span class="dark:text-slate-300 text-gray-600">Sistemas IoT com ESP32, MQTT e dashboards em tempo real</span>
+                        </li>
+                        <li class="flex items-start gap-2 text-sm">
+                            <i class="fas fa-check-circle text-green-500 flex-shrink-0 mt-0.5"></i>
+                            <span class="dark:text-slate-300 text-gray-600">Deploy em nuvem: AWS, Railway, Render com Docker</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- LinkedIn Badge -->
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-6 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-4 flex items-center gap-2">
+                        <i class="fab fa-linkedin text-blue-500"></i>
+                        Perfil no LinkedIn
+                    </h3>
+                    <div class="flex flex-col sm:flex-row items-center gap-4">
+                        <!-- Badge escuro (visível no dark mode) -->
+                        <div id="li-badge-dark" class="block">
+                            <div class="badge-base LI-profile-badge"
+                                data-locale="pt_BR"
+                                data-size="medium"
+                                data-theme="dark"
+                                data-type="VERTICAL"
+                                data-vanity="renato-teodoro-82b6b339"
+                                data-version="v1">
+                                <a class="badge-base__link LI-simple-link"
+                                    href="https://www.linkedin.com/in/renato-teodoro-82b6b339?trk=profile-badge">
+                                    Renato Teodoro
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Badge claro (visível no light mode) -->
+                        <div id="li-badge-light" class="hidden">
+                            <div class="badge-base LI-profile-badge"
+                                data-locale="pt_BR"
+                                data-size="medium"
+                                data-theme="light"
+                                data-type="VERTICAL"
+                                data-vanity="renato-teodoro-82b6b339"
+                                data-version="v1">
+                                <a class="badge-base__link LI-simple-link"
+                                    href="https://www.linkedin.com/in/renato-teodoro-82b6b339?trk=profile-badge">
+                                    Renato Teodoro
+                                </a>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<!-- =============================================================
+     SEÇÃO SKILLS
+============================================================= -->
+<section id="skills" class="py-20 dark:bg-slate-900 bg-gray-50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14">
+            <span class="text-blue-500 font-semibold text-sm uppercase tracking-widest">Tecnologias</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Stack &amp; Skills</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+            <p class="dark:text-slate-400 text-gray-500 mt-4 max-w-2xl mx-auto text-sm">
+                Ferramentas e tecnologias que uso no dia a dia para construir soluções robustas.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+            {% for skill_group in skills %}
+            <div class="dark:bg-slate-800 bg-white rounded-2xl p-6 border dark:border-slate-700 border-gray-200 shadow-sm card-hover">
+                <!-- Header da categoria -->
+                <div class="flex items-center gap-3 mb-5">
+                    <div class="w-10 h-10 rounded-xl dark:bg-slate-900/80 bg-gray-100 flex items-center justify-center">
+                        <i class="fas {{ skill_group.icone }} {{ skill_group.cor }} text-lg"></i>
+                    </div>
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-sm">{{ skill_group.categoria }}</h3>
+                </div>
+
+                <!-- Barras de progresso -->
+                <div class="space-y-4">
+                    {% for tech in skill_group.tecnologias %}
+                    <div>
+                        <div class="flex justify-between items-center mb-1.5">
+                            <span class="dark:text-slate-300 text-gray-700 text-sm font-medium">{{ tech.nome }}</span>
+                            <span class="dark:text-slate-500 text-gray-400 text-xs">{{ tech.nivel }}%</span>
+                        </div>
+                        <div class="w-full dark:bg-slate-700/50 bg-gray-200 rounded-full h-1.5">
+                            <div class="skill-bar-fill h-1.5 rounded-full bg-gradient-to-r from-blue-500 to-purple-500"
+                                data-width="{{ tech.nivel }}">
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================================
+     SEÇÃO PROJETOS
+============================================================= -->
+<section id="projetos" class="py-20 dark:bg-slate-800/30 bg-gray-100/50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14">
+            <span class="text-blue-500 font-semibold text-sm uppercase tracking-widest">O que construí</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Projetos</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+            <p class="dark:text-slate-400 text-gray-500 mt-4 max-w-2xl mx-auto text-sm">
+                Seleção de alguns projetos que desenvolvi, unindo backend sólido, IA e hardware.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {% for projeto in projetos %}
+            <div class="group dark:bg-slate-800 bg-white rounded-2xl border dark:border-slate-700 border-gray-200 shadow-sm card-hover overflow-hidden
+                {% if projeto.destaque %}dark:ring-1 dark:ring-blue-500/20 ring-1 ring-blue-500/20{% endif %}">
+
+                <!-- Barra colorida superior -->
+                <div class="h-1 {% if forloop.counter == 1 %}bg-gradient-to-r from-teal-500 to-blue-500{% elif forloop.counter == 2 %}bg-gradient-to-r from-red-500 to-orange-500{% elif forloop.counter == 3 %}bg-gradient-to-r from-purple-500 to-pink-500{% else %}bg-gradient-to-r from-yellow-500 to-orange-500{% endif %}"></div>
+
+                <div class="p-6">
+                    <!-- Número + título + ícone -->
+                    <div class="flex items-start justify-between mb-3">
+                        <div class="flex items-center gap-3">
+                            <div class="w-9 h-9 dark:bg-slate-900/80 bg-gray-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                                <i class="fas {{ projeto.icone }} text-blue-500"></i>
+                            </div>
+                            <div>
+                                <span class="dark:text-slate-600 text-gray-400 text-xs font-mono">#0{{ forloop.counter }}</span>
+                                <h3 class="dark:text-white text-gray-900 font-bold text-base group-hover:text-blue-500 transition-colors leading-tight">
+                                    {{ projeto.titulo }}
+                                </h3>
+                            </div>
+                        </div>
+                        {% if projeto.destaque %}
+                        <span class="flex-shrink-0 px-2 py-0.5 dark:bg-blue-950/80 bg-blue-100 border dark:border-blue-700/50 border-blue-200 dark:text-blue-400 text-blue-600 text-xs rounded-full font-medium">
+                            Destaque
+                        </span>
+                        {% endif %}
+                    </div>
+
+                    <!-- Descrição -->
+                    <p class="dark:text-slate-400 text-gray-600 text-sm leading-relaxed mb-4">
+                        {{ projeto.descricao }}
+                    </p>
+
+                    <!-- Stack badges -->
+                    <div class="flex flex-wrap gap-1.5 mb-5">
+                        {% for tech in projeto.stack %}
+                        <span class="px-2 py-0.5 text-xs font-medium dark:text-slate-300 text-gray-700 dark:bg-slate-700 bg-gray-100 border dark:border-slate-600 border-gray-200 rounded-md">
+                            {{ tech }}
+                        </span>
+                        {% endfor %}
+                    </div>
+
+                    <!-- Botões -->
+                    <div class="flex items-center gap-2 pt-4 border-t dark:border-slate-700 border-gray-200">
+                        <a href="{{ projeto.github_url }}" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-1.5 dark:text-slate-400 text-gray-500 hover:text-white hover:bg-slate-700 dark:hover:text-white text-xs font-medium px-3 py-1.5 rounded-lg transition-all">
+                            <i class="fab fa-github"></i>
+                            GitHub
+                        </a>
+                        <a href="{{ projeto.demo_url }}" target="_blank" rel="noopener noreferrer"
+                            class="flex items-center gap-1.5 text-blue-500 hover:text-blue-400 dark:hover:bg-blue-950/50 hover:bg-blue-50 text-xs font-medium px-3 py-1.5 rounded-lg transition-all">
+                            <i class="fas fa-external-link-alt text-xs"></i>
+                            Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+            {% empty %}
+            <p class="dark:text-slate-400 text-gray-500 col-span-2 text-center py-12">Nenhum projeto cadastrado ainda.</p>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================================
+     SEÇÃO EXPERIÊNCIA COM FOTOS — Timeline
+============================================================= -->
+<section id="experiencia" class="py-20 dark:bg-slate-900 bg-gray-50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14">
+            <span class="text-blue-500 font-semibold text-sm uppercase tracking-widest">Trajetória</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Experiência Profissional</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+            <p class="dark:text-slate-400 text-gray-500 mt-3 text-sm">25+ anos de atuação em eletrônica, telecomunicações e TI</p>
+        </div>
+
+        <!-- Timeline -->
+        <div class="relative">
+            <!-- Linha vertical central (desktop) -->
+            <div class="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-gradient-to-b from-blue-500 via-purple-500 to-transparent" style="transform: translateX(-50%);"></div>
+
+            {% for exp in experiencias %}
+            <!-- Alterna: item ímpar fica na esquerda, par na direita (desktop) -->
+            <div class="relative mb-10 {% if forloop.counter|divisibleby:2 %}md:flex md:flex-row-reverse{% else %}md:flex{% endif %}">
+
+                <!-- Ponto da timeline (desktop) -->
+                <div class="hidden md:flex absolute left-1/2 top-6 -translate-x-1/2 z-10">
+                    <div class="w-10 h-10 rounded-xl {{ exp.cor_icone }} flex items-center justify-center shadow-lg border-2 dark:border-slate-900 border-white">
+                        <i class="fas {{ exp.icone }} text-white text-sm"></i>
+                    </div>
+                </div>
+
+                <!-- Conteúdo do card -->
+                <div class="md:w-[calc(50%-2.5rem)] {% if forloop.counter|divisibleby:2 %}md:mr-10{% else %}md:ml-10{% endif %}">
+                    <div class="dark:bg-slate-800 bg-white rounded-2xl border dark:border-slate-700 border-gray-200 shadow-sm card-hover overflow-hidden">
+
+                        <!-- Foto da empresa (quando disponível) -->
+                        {% if exp.foto %}
+                        <div class="w-full h-40 overflow-hidden dark:bg-slate-700 bg-gray-100">
+                            <img src="{% static exp.foto %}"
+                                alt="{{ exp.empresa }}"
+                                class="w-full h-full object-cover"
+                                onerror="this.parentElement.classList.add('flex','items-center','justify-center'); this.remove(); this.parentElement.innerHTML='<i class=\'fas {{ exp.icone }} text-3xl dark:text-slate-600 text-gray-300\'></i>'">
+                        </div>
+                        {% endif %}
+
+                        <!-- Segunda foto (SENAI tem duas) -->
+                        {% if exp.foto2 %}
+                        <div class="w-full h-32 overflow-hidden dark:bg-slate-700 bg-gray-100 border-t dark:border-slate-600 border-gray-200">
+                            <img src="{% static exp.foto2 %}"
+                                alt="{{ exp.empresa }} 2"
+                                class="w-full h-full object-cover">
+                        </div>
+                        {% endif %}
+
+                        <div class="p-5">
+                            <!-- Ícone mobile + cabeçalho -->
+                            <div class="flex items-start gap-3 mb-3">
+                                <div class="md:hidden w-9 h-9 rounded-lg {{ exp.cor_icone }} flex items-center justify-center flex-shrink-0">
+                                    <i class="fas {{ exp.icone }} text-white text-sm"></i>
+                                </div>
+                                <div class="flex-1">
+                                    <div class="flex flex-wrap items-start justify-between gap-2">
+                                        <div>
+                                            <h3 class="dark:text-white text-gray-900 font-bold text-base leading-tight">{{ exp.cargo }}</h3>
+                                            <p class="dark:text-blue-400 text-blue-600 text-sm font-semibold mt-0.5">{{ exp.empresa }}</p>
+                                        </div>
+                                        <span class="flex-shrink-0 px-2.5 py-1 dark:bg-slate-900/80 bg-gray-100 border dark:border-slate-700 border-gray-200 dark:text-slate-300 text-gray-600 text-xs rounded-full font-medium">
+                                            {{ exp.periodo }}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Descrição -->
+                            <p class="dark:text-slate-400 text-gray-600 text-sm leading-relaxed mb-4">{{ exp.descricao }}</p>
+
+                            <!-- Tags de tecnologias -->
+                            <div class="flex flex-wrap gap-1.5">
+                                {% for tech in exp.tecnologias %}
+                                <span class="px-2 py-0.5 dark:bg-slate-900/60 bg-gray-100 border dark:border-slate-700/50 border-gray-200 dark:text-slate-300 text-gray-600 text-xs rounded-md font-medium">
+                                    {{ tech }}
+                                </span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================================
+     SEÇÃO PROGRAMA NASCER / PROJETO ACCESSFIVE
+============================================================= -->
+<section id="nascer" class="py-20 dark:bg-slate-800/30 bg-gray-100/50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-10">
+            <span class="text-purple-500 font-semibold text-sm uppercase tracking-widest">Empreendedorismo & Inovação</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Programa Nascer &amp; Startup AccessFive</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+            <p class="dark:text-slate-400 text-gray-500 mt-3 text-sm max-w-xl mx-auto">
+                Pré-Incubação de Ideias Inovadoras — FAPESC · SCTI · SEBRAE/SC — VI Edição 2025
+            </p>
+        </div>
+
+        <!-- Card principal com gradiente de borda -->
+        <div class="max-w-5xl mx-auto">
+            <div class="relative rounded-2xl overflow-hidden"
+                style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); padding: 2px;">
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-8 sm:p-10">
+
+                    <!-- Header do projeto -->
+                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-8 pb-8 border-b dark:border-slate-700 border-gray-200">
+                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl flex-shrink-0"
+                            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+                            <i class="fas fa-shield-halved text-white text-2xl"></i>
+                        </div>
+                        <div class="flex-1">
+                            <div class="flex flex-wrap gap-2 mb-2">
+                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold text-white"
+                                    style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
+                                    Programa Nascer · FAPESC + SEBRAE/SC
+                                </span>
+                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold dark:bg-purple-900/50 bg-purple-100 dark:text-purple-300 text-purple-700 border dark:border-purple-700 border-purple-300">
+                                    VI Edição 2025 · Pré-Incubação
+                                </span>
+                            </div>
+                            <h3 class="text-2xl sm:text-3xl font-black gradient-text">AccessFive</h3>
+                            <p class="dark:text-slate-400 text-gray-500 text-sm mt-1">
+                                Inteligência Artificial a Serviço da Segurança Industrial
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- Conteúdo principal: problema + solução -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
+
+                        <!-- Problema: contexto de mercado -->
+                        <div>
+                            <h4 class="dark:text-white text-gray-900 font-semibold text-sm mb-4 flex items-center gap-2">
+                                <i class="fas fa-triangle-exclamation text-red-500"></i>
+                                O Problema
+                            </h4>
+                            <p class="dark:text-slate-300 text-gray-700 leading-relaxed text-sm mb-4">
+                                Acidentes de trabalho no Brasil representam um problema crítico e custoso.
+                                A fiscalização humana é falha — e as falhas custam vidas e bilhões.
+                            </p>
+                            <!-- Stats impacto -->
+                            <div class="grid grid-cols-3 gap-2">
+                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
+                                    <div class="text-lg font-black text-red-500">623k</div>
+                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">acidentes/ano</div>
+                                </div>
+                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
+                                    <div class="text-lg font-black text-red-500">2.583</div>
+                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">mortes em 2024</div>
+                                </div>
+                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
+                                    <div class="text-lg font-black text-red-500">R$115bi</div>
+                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">custo anual</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Solução: AccessFive -->
+                        <div>
+                            <h4 class="dark:text-white text-gray-900 font-semibold text-sm mb-4 flex items-center gap-2">
+                                <i class="fas fa-microchip text-blue-500"></i>
+                                A Solução — AccessFive
+                            </h4>
+                            <p class="dark:text-slate-300 text-gray-700 leading-relaxed text-sm mb-4">
+                                Sistema de <strong class="dark:text-white text-gray-900">segurança preditiva em tempo real</strong>
+                                que usa câmeras CCTV e sensores IoT já existentes nas empresas para detectar automaticamente
+                                o não-uso de EPIs e zonas de risco, disparando alertas imediatos ao supervisor.
+                            </p>
+                            <!-- Como funciona -->
+                            <div class="space-y-2">
+                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
+                                    <span class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">1</span>
+                                    <span><strong>Captação</strong> — câmeras CCTV e sensores IoT existentes</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
+                                    <span class="w-5 h-5 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold flex-shrink-0">2</span>
+                                    <span><strong>Processamento</strong> — detecção de EPIs e zonas de risco em tempo real</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
+                                    <span class="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">3</span>
+                                    <span><strong>Análise Preditiva</strong> — IA cruza dados e dispara Gatilho de Risco</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
+                                    <span class="w-5 h-5 rounded-full bg-green-600 text-white flex items-center justify-center font-bold flex-shrink-0">4</span>
+                                    <span><strong>Ação Imediata</strong> — alerta sonoro in loco + notificação ao supervisor</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer: stats da oportunidade + programa -->
+                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t dark:border-slate-700 border-gray-200">
+                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
+                            <div class="text-base font-black gradient-text">Indústria 4.0</div>
+                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Segmento</div>
+                        </div>
+                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
+                            <div class="text-base font-black gradient-text">+28,5%/ano</div>
+                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Crescimento IA/Segurança</div>
+                        </div>
+                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
+                            <div class="text-base font-black gradient-text">FAPESC</div>
+                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Fomento SC</div>
+                        </div>
+                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
+                            <div class="text-base font-black gradient-text">SEBRAE/SC</div>
+                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Mentoria</div>
+                        </div>
+                    </div>
+
+                    <!-- Tags de tecnologia -->
+                    <div class="flex flex-wrap gap-2 mt-5">
+                        {% for tag in accessfive_tags %}
+                        <span class="px-2.5 py-1 text-xs rounded-full dark:bg-blue-950/50 bg-blue-50 dark:text-blue-300 text-blue-700 border dark:border-blue-800/40 border-blue-200">{{ tag }}</span>
+                        {% endfor %}
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- =============================================================
+     SEÇÃO CONTATO
+============================================================= -->
+<section id="contato" class="py-20 dark:bg-slate-900 bg-gray-50 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+
+        <div class="text-center mb-14">
+            <span class="text-blue-500 font-semibold text-sm uppercase tracking-widest">Vamos conversar</span>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Contato</h2>
+            <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
+            <p class="dark:text-slate-400 text-gray-500 mt-4 max-w-2xl mx-auto text-sm">
+                Tem um projeto em mente? Quer discutir oportunidades? Estou disponível.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-5 gap-8 max-w-5xl mx-auto">
+
+            <!-- Info de contato (2 colunas) -->
+            <div class="lg:col-span-2 space-y-3">
+                <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-4">Informações de Contato</h3>
+
+                <a href="mailto:renatoteodoro2@gmail.com"
+                    class="flex items-center gap-4 p-4 dark:bg-slate-800 bg-white rounded-xl border dark:border-slate-700 border-gray-200 hover:border-blue-500 transition-all group shadow-sm">
+                    <div class="w-10 h-10 dark:bg-blue-600/20 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-600/30 transition-colors flex-shrink-0">
+                        <i class="fas fa-envelope text-blue-500"></i>
+                    </div>
+                    <div>
+                        <p class="dark:text-slate-500 text-gray-400 text-xs">Email</p>
+                        <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">renatoteodoro2@gmail.com</p>
+                    </div>
+                </a>
+
+                <a href="https://wa.me/5548996404676" target="_blank" rel="noopener"
+                    class="flex items-center gap-4 p-4 dark:bg-slate-800 bg-white rounded-xl border dark:border-slate-700 border-gray-200 hover:border-green-500 transition-all group shadow-sm">
+                    <div class="w-10 h-10 dark:bg-green-600/20 bg-green-100 rounded-lg flex items-center justify-center group-hover:bg-green-600/30 transition-colors flex-shrink-0">
+                        <i class="fab fa-whatsapp text-green-500"></i>
+                    </div>
+                    <div>
+                        <p class="dark:text-slate-500 text-gray-400 text-xs">WhatsApp</p>
+                        <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">(48) 99640-4676</p>
+                    </div>
+                </a>
+
+                <div class="flex items-center gap-4 p-4 dark:bg-slate-800 bg-white rounded-xl border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <div class="w-10 h-10 dark:bg-purple-600/20 bg-purple-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-map-marker-alt text-purple-500"></i>
+                    </div>
+                    <div>
+                        <p class="dark:text-slate-500 text-gray-400 text-xs">Localização</p>
+                        <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">Palhoça, SC — Brasil</p>
+                    </div>
+                </div>
+
+                <a href="https://github.com/renatoteodoro" target="_blank" rel="noopener"
+                    class="flex items-center gap-4 p-4 dark:bg-slate-800 bg-white rounded-xl border dark:border-slate-700 border-gray-200 hover:border-slate-500 transition-all group shadow-sm">
+                    <div class="w-10 h-10 dark:bg-slate-600/40 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-slate-600/60 transition-colors flex-shrink-0">
+                        <i class="fab fa-github dark:text-slate-300 text-gray-600"></i>
+                    </div>
+                    <div>
+                        <p class="dark:text-slate-500 text-gray-400 text-xs">GitHub</p>
+                        <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">github.com/renatoteodoro</p>
+                    </div>
+                </a>
+
+                <a href="https://www.linkedin.com/in/renato-teodoro-82b6b339" target="_blank" rel="noopener"
+                    class="flex items-center gap-4 p-4 dark:bg-slate-800 bg-white rounded-xl border dark:border-slate-700 border-gray-200 hover:border-blue-600 transition-all group shadow-sm">
+                    <div class="w-10 h-10 dark:bg-blue-700/20 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-700/40 transition-colors flex-shrink-0">
+                        <i class="fab fa-linkedin-in text-blue-500"></i>
+                    </div>
+                    <div>
+                        <p class="dark:text-slate-500 text-gray-400 text-xs">LinkedIn</p>
+                        <p class="dark:text-slate-200 text-gray-800 text-sm font-medium">linkedin.com/in/renato-teodoro-82b6b339</p>
+                    </div>
+                </a>
+            </div>
+
+            <!-- Formulário (3 colunas) -->
+            <div class="lg:col-span-3">
+                <div class="dark:bg-slate-800 bg-white rounded-2xl p-7 border dark:border-slate-700 border-gray-200 shadow-sm">
+                    <h3 class="dark:text-white text-gray-900 font-semibold text-base mb-5">Envie uma Mensagem</h3>
+
+                    <form method="POST" action="{% url 'contato' %}" id="contact-form" novalidate>
+                        {% csrf_token %}
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4">
+                            <!-- Nome -->
+                            <div>
+                                <label for="nome" class="block dark:text-slate-400 text-gray-600 text-sm font-medium mb-1.5">
+                                    Nome <span class="text-red-500">*</span>
+                                </label>
+                                <input type="text" id="nome" name="nome" required
+                                    placeholder="Seu nome completo"
+                                    class="w-full dark:bg-slate-900/60 bg-gray-50 border dark:border-slate-600 border-gray-300 dark:text-white text-gray-900 dark:placeholder-slate-500 placeholder-gray-400 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                            </div>
+
+                            <!-- Email -->
+                            <div>
+                                <label for="email" class="block dark:text-slate-400 text-gray-600 text-sm font-medium mb-1.5">
+                                    Email <span class="text-red-500">*</span>
+                                </label>
+                                <input type="email" id="email" name="email" required
+                                    placeholder="seu@email.com"
+                                    class="w-full dark:bg-slate-900/60 bg-gray-50 border dark:border-slate-600 border-gray-300 dark:text-white text-gray-900 dark:placeholder-slate-500 placeholder-gray-400 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                            </div>
+                        </div>
+
+                        <!-- Assunto -->
+                        <div class="mb-4">
+                            <label for="assunto" class="block dark:text-slate-400 text-gray-600 text-sm font-medium mb-1.5">
+                                Assunto <span class="text-red-500">*</span>
+                            </label>
+                            <input type="text" id="assunto" name="assunto" required
+                                placeholder="Sobre o que você quer falar?"
+                                class="w-full dark:bg-slate-900/60 bg-gray-50 border dark:border-slate-600 border-gray-300 dark:text-white text-gray-900 dark:placeholder-slate-500 placeholder-gray-400 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors">
+                        </div>
+
+                        <!-- Mensagem -->
+                        <div class="mb-5">
+                            <label for="mensagem" class="block dark:text-slate-400 text-gray-600 text-sm font-medium mb-1.5">
+                                Mensagem <span class="text-red-500">*</span>
+                            </label>
+                            <textarea id="mensagem" name="mensagem" required rows="5"
+                                placeholder="Descreva seu projeto ou como posso ajudar..."
+                                class="w-full dark:bg-slate-900/60 bg-gray-50 border dark:border-slate-600 border-gray-300 dark:text-white text-gray-900 dark:placeholder-slate-500 placeholder-gray-400 rounded-lg px-4 py-2.5 text-sm focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-colors resize-none"></textarea>
+                        </div>
+
+                        <!-- Submit -->
+                        <button type="submit" id="submit-btn"
+                            class="w-full flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 px-6 rounded-lg transition-all hover:shadow-lg hover:shadow-blue-500/25">
+                            <i class="fas fa-paper-plane text-sm"></i>
+                            Enviar Mensagem
+                        </button>
+
+                        <p class="dark:text-slate-600 text-gray-400 text-xs mt-3 text-center">
+                            <i class="fas fa-lock text-xs mr-1"></i>
+                            Seus dados não serão compartilhados. Responderei em até 24 horas.
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% endblock %}
+
+
+{% block extra_js %}
+<script>
+// Validação client-side do formulário de contato
+var form = document.getElementById('contact-form');
+var submitBtn = document.getElementById('submit-btn');
+
+if (form) {
+    form.addEventListener('submit', function(e) {
+        var fields = ['nome', 'email', 'assunto', 'mensagem'];
+        var isValid = true;
+
+        fields.forEach(function(fieldId) {
+            var field = document.getElementById(fieldId);
+            if (!field.value.trim()) {
+                field.classList.add('border-red-500');
+                field.classList.remove('dark:border-slate-600', 'border-gray-300');
+                isValid = false;
+            } else {
+                field.classList.remove('border-red-500');
+            }
+        });
+
+        // Valida formato de email
+        var emailField = document.getElementById('email');
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (emailField.value && !emailRegex.test(emailField.value)) {
+            emailField.classList.add('border-red-500');
+            isValid = false;
+        }
+
+        if (!isValid) {
+            e.preventDefault();
+            return;
+        }
+
+        // Feedback visual no botão durante envio
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin mr-2"></i>Enviando...';
+    });
+
+    // Remove borda vermelha ao digitar
+    form.querySelectorAll('input, textarea').forEach(function(field) {
+        field.addEventListener('input', function() {
+            this.classList.remove('border-red-500');
+        });
+    });
+}
+</script>
+{% endblock %}

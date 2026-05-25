@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfólio de Renato Teodoro - Desenvolvedor Python, Django e IA">
+    <meta name="keywords" content="desenvolvedor python, django, langchain, ia, iot, portfolio, renato teodoro, backend">
+    <meta name="author" content="Renato Teodoro">
+    <meta name="robots" content="index, follow">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Renato Teodoro — Desenvolvedor Python & IA">
+    <meta property="og:description" content="Portfólio de Renato Teodoro, desenvolvedor Python especializado em Django, LangChain, IA e IoT.">
+    <meta property="og:locale" content="pt_BR">
+
+    <title>{% block title %}Renato Teodoro | Dev Python & IA{% endblock %}</title>
+
+    <!-- Aplica tema antes de renderizar para evitar flash branco -->
+    <script>
+        (function() {
+            var theme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.classList.toggle('dark', theme === 'dark');
+        })();
+    </script>
+
+    <!-- Tailwind CDN — config DEPOIS do script para darkMode: 'class' funcionar -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>tailwind.config = { darkMode: 'class' }</script>
+
+    <!-- LinkedIn Badge script -->
+    <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+          crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <style>
+        body { font-family: 'Inter', system-ui, sans-serif; }
+        html { scroll-behavior: smooth; }
+
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb { background: #3b82f6; border-radius: 3px; }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .card-hover {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .card-hover:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 40px rgba(59, 130, 246, 0.15);
+        }
+
+        /* Progress bars de skills */
+        .skill-bar-fill {
+            width: 0%;
+            transition: width 1.2s ease-in-out;
+        }
+
+        /* Hero grid pattern */
+        .hero-pattern {
+            background-image:
+                radial-gradient(circle at 20% 80%, rgba(59,130,246,0.08) 0%, transparent 50%),
+                radial-gradient(circle at 80% 20%, rgba(139,92,246,0.08) 0%, transparent 50%),
+                linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
+                linear-gradient(90deg, rgba(255,255,255,0.02) 1px, transparent 1px);
+            background-size: 100% 100%, 100% 100%, 60px 60px, 60px 60px;
+        }
+
+        /* Chatbot typing dots */
+        .chat-messages {
+            scrollbar-width: thin;
+            scrollbar-color: #3b82f6 transparent;
+        }
+        .chat-messages::-webkit-scrollbar { width: 4px; }
+        .chat-messages::-webkit-scrollbar-thumb {
+            background: #3b82f6;
+            border-radius: 2px;
+        }
+        .typing-indicator span {
+            animation: typing-dots 1s infinite;
+            display: inline-block;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #3b82f6;
+            margin: 0 2px;
+        }
+        .typing-indicator span:nth-child(2) { animation-delay: 0.2s; }
+        .typing-indicator span:nth-child(3) { animation-delay: 0.4s; }
+        @keyframes typing-dots {
+            0%, 60%, 100% { transform: translateY(0); }
+            30% { transform: translateY(-6px); }
+        }
+
+        {% block extra_style %}{% endblock %}
+    </style>
+    {% block extra_head %}{% endblock %}
+</head>
+<body class="dark:bg-slate-900 dark:text-slate-100 bg-gray-50 text-gray-900 transition-colors duration-300 antialiased">
+
+<!-- ===== NAVBAR ===== -->
+<nav class="fixed top-0 left-0 right-0 z-50 dark:bg-slate-900/95 bg-white/95 backdrop-blur-sm border-b dark:border-slate-700/60 border-gray-200 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+        <div class="flex items-center justify-between h-16">
+
+            <!-- Logo -->
+            <a href="#hero" class="flex items-center gap-2 group">
+                <div class="w-8 h-8 rounded-lg bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center text-white font-bold text-sm">
+                    RT
+                </div>
+                <span class="hidden sm:block font-semibold dark:text-white text-gray-900 group-hover:text-blue-500 transition-colors text-sm">
+                    Renato Teodoro
+                </span>
+            </a>
+
+            <!-- Desktop nav links -->
+            <div class="hidden md:flex items-center gap-1 text-sm font-medium">
+                <a href="#sobre" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Sobre</a>
+                <a href="#skills" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Skills</a>
+                <a href="#projetos" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Projetos</a>
+                <a href="#experiencia" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Experiência</a>
+                <a href="#nascer" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Empreend.</a>
+                <a href="#contato" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Contato</a>
+            </div>
+
+            <div class="flex items-center gap-2">
+                <!-- Dark/Light toggle -->
+                <button id="themeToggle" onclick="toggleTheme()" title="Alternar modo claro/escuro"
+                    class="p-2 rounded-full dark:bg-slate-700 bg-gray-100 dark:text-yellow-400 text-slate-600 hover:scale-110 transition-all duration-200">
+                    <i id="themeIcon" class="fa-solid fa-moon text-sm"></i>
+                </button>
+                <!-- Mobile menu button -->
+                <button id="mobileMenuBtn" class="md:hidden p-2 rounded-md dark:text-slate-300 text-gray-600 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">
+                    <i id="mobileMenuIcon" class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu" class="hidden md:hidden border-t dark:border-slate-700 border-gray-200 pb-3 pt-2">
+            <div class="flex flex-col gap-1 text-sm font-medium">
+                <a href="#sobre" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Sobre</a>
+                <a href="#skills" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Skills</a>
+                <a href="#projetos" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Projetos</a>
+                <a href="#experiencia" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Experiência</a>
+                <a href="#nascer" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Empreend.</a>
+                <a href="#contato" onclick="closeMobileMenu()" class="px-3 py-2 rounded-md dark:text-slate-300 text-gray-600 hover:text-blue-500 dark:hover:bg-slate-800 hover:bg-gray-100 transition-all">Contato</a>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<!-- ===== DJANGO MESSAGES ===== -->
+{% if messages %}
+<div class="fixed top-20 right-4 z-50 space-y-2 max-w-sm" id="alertContainer">
+    {% for message in messages %}
+    <div class="flex items-start gap-3 px-4 py-3 rounded-lg shadow-lg text-sm font-medium
+        {% if message.tags == 'success' %}bg-green-600 text-white{% else %}bg-red-600 text-white{% endif %}">
+        <i class="fas {% if message.tags == 'success' %}fa-check-circle{% else %}fa-exclamation-circle{% endif %} mt-0.5 flex-shrink-0"></i>
+        <span class="flex-1">{{ message }}</span>
+        <button onclick="this.closest('div').remove()" class="opacity-75 hover:opacity-100 font-bold flex-shrink-0">&times;</button>
+    </div>
+    {% endfor %}
+</div>
+<script>
+    setTimeout(function() {
+        var c = document.getElementById('alertContainer');
+        if (c) { c.style.transition = 'opacity 0.5s'; c.style.opacity = '0'; setTimeout(function(){c.remove();}, 500); }
+    }, 5000);
+</script>
+{% endif %}
+
+<!-- ===== MAIN CONTENT ===== -->
+<main class="pt-16">
+    {% block content %}{% endblock %}
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="dark:bg-slate-900 bg-gray-100 border-t dark:border-slate-700/60 border-gray-200 py-10 mt-16 transition-colors duration-300">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+        <p class="gradient-text font-bold text-lg mb-1">Renato Teodoro</p>
+        <p class="dark:text-slate-400 text-gray-500 text-sm mb-5">Desenvolvedor Python & IA | Palhoça/SC – Brasil</p>
+        <div class="flex justify-center gap-4 mb-5">
+            <a href="https://github.com/renatoteodoro" target="_blank" rel="noopener" title="GitHub"
+                class="w-10 h-10 rounded-lg dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 flex items-center justify-center dark:text-slate-400 text-gray-500 hover:text-blue-500 hover:border-blue-500 transition-all">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/renato-teodoro-82b6b339" target="_blank" rel="noopener" title="LinkedIn"
+                class="w-10 h-10 rounded-lg dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 flex items-center justify-center dark:text-slate-400 text-gray-500 hover:text-blue-500 hover:border-blue-500 transition-all">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:renatoteodoro2@gmail.com" title="Email"
+                class="w-10 h-10 rounded-lg dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 flex items-center justify-center dark:text-slate-400 text-gray-500 hover:text-blue-500 hover:border-blue-500 transition-all">
+                <i class="fas fa-envelope"></i>
+            </a>
+            <a href="https://wa.me/5548996404676" target="_blank" rel="noopener" title="WhatsApp"
+                class="w-10 h-10 rounded-lg dark:bg-slate-800 bg-white border dark:border-slate-700 border-gray-200 flex items-center justify-center dark:text-slate-400 text-gray-500 hover:text-green-500 hover:border-green-500 transition-all">
+                <i class="fab fa-whatsapp"></i>
+            </a>
+        </div>
+        <p class="dark:text-slate-600 text-gray-400 text-xs">
+            &copy; 2025 Renato Teodoro &bull; Feito com <i class="fas fa-heart text-red-500 text-xs"></i> Django + Tailwind CSS
+        </p>
+    </div>
+</footer>
+
+<!-- ===== CHATBOT BOTÃO FLUTUANTE ===== -->
+<button id="chatbotToggle" onclick="toggleChat()" title="Abrir assistente do portfólio"
+    class="fixed bottom-6 right-6 z-50 w-14 h-14 bg-blue-600 hover:bg-blue-700 rounded-full flex items-center justify-center shadow-lg hover:scale-110 transition-all duration-200 border-2 border-blue-500/50">
+    <i id="chatIcon" class="fas fa-comments text-white text-xl"></i>
+</button>
+
+<!-- ===== CHATBOT WIDGET ===== -->
+<div id="chatWidget"
+    class="fixed bottom-24 right-6 z-50 w-80 sm:w-96 dark:bg-slate-800 bg-white rounded-2xl shadow-2xl border dark:border-slate-600 border-gray-200 flex-col overflow-hidden transition-colors duration-300"
+    style="height: 480px; display: none; flex-direction: column;">
+
+    <!-- Header -->
+    <div class="bg-blue-600 px-4 py-3 flex items-center gap-3 flex-shrink-0">
+        <div class="w-9 h-9 bg-white/20 rounded-full flex items-center justify-center">
+            <i class="fas fa-robot text-white text-sm"></i>
+        </div>
+        <div class="flex-1">
+            <p class="text-white font-semibold text-sm">Assistente RT</p>
+            <p class="text-blue-200 text-xs">Pergunte sobre o portfólio</p>
+        </div>
+        <button onclick="toggleChat()" class="text-white/70 hover:text-white transition-colors p-1 rounded">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+
+    <!-- Área de mensagens -->
+    <div id="chatMessages" class="flex-1 overflow-y-auto p-4 chat-messages space-y-3">
+        <!-- Mensagem inicial do bot -->
+        <div class="flex gap-2">
+            <div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <i class="fas fa-robot text-white text-xs"></i>
+            </div>
+            <div class="dark:bg-slate-700 bg-gray-100 rounded-2xl rounded-tl-none px-3 py-2 text-sm dark:text-slate-100 text-gray-800" style="max-width: 260px;">
+                Olá! Sou o assistente do portfólio do Renato. Posso responder perguntas sobre sua experiência, projetos, skills e currículo. Como posso ajudar?
+            </div>
+        </div>
+    </div>
+
+    <!-- Input -->
+    <div class="p-3 border-t dark:border-slate-600 border-gray-200 flex-shrink-0">
+        <div class="flex gap-2">
+            <input id="chatInput" type="text" placeholder="Pergunta sobre o portfólio..."
+                class="flex-1 px-3 py-2 text-sm rounded-xl dark:bg-slate-700 bg-gray-100 dark:text-slate-100 text-gray-800 border dark:border-slate-600 border-gray-300 focus:outline-none focus:border-blue-500 dark:focus:border-blue-400 transition-colors"
+                onkeypress="if(event.key==='Enter') sendMessage()">
+            <button onclick="sendMessage()"
+                class="w-9 h-9 bg-blue-600 hover:bg-blue-700 rounded-xl flex items-center justify-center transition-colors flex-shrink-0">
+                <i class="fas fa-paper-plane text-white text-xs"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ===== JAVASCRIPT GLOBAL ===== -->
+<script>
+// ===== DARK MODE =====
+function syncLinkedInBadge(isDark) {
+    var dark = document.getElementById('li-badge-dark');
+    var light = document.getElementById('li-badge-light');
+    if (dark) dark.style.display = isDark ? 'block' : 'none';
+    if (light) light.style.display = isDark ? 'none' : 'block';
+}
+
+function toggleTheme() {
+    var isDark = document.documentElement.classList.toggle('dark');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    document.getElementById('themeIcon').className = isDark ? 'fa-solid fa-moon text-sm' : 'fa-solid fa-sun text-sm';
+    syncLinkedInBadge(isDark);
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    var isDark = document.documentElement.classList.contains('dark');
+    document.getElementById('themeIcon').className = isDark ? 'fa-solid fa-moon text-sm' : 'fa-solid fa-sun text-sm';
+    syncLinkedInBadge(isDark);
+});
+
+// ===== MOBILE MENU =====
+function closeMobileMenu() {
+    document.getElementById('mobileMenu').classList.add('hidden');
+    document.getElementById('mobileMenuIcon').className = 'fa-solid fa-bars';
+}
+
+document.getElementById('mobileMenuBtn').addEventListener('click', function() {
+    var menu = document.getElementById('mobileMenu');
+    var icon = document.getElementById('mobileMenuIcon');
+    var isHidden = menu.classList.contains('hidden');
+    menu.classList.toggle('hidden');
+    icon.className = isHidden ? 'fa-solid fa-times' : 'fa-solid fa-bars';
+});
+
+// ===== CHATBOT =====
+function toggleChat() {
+    var widget = document.getElementById('chatWidget');
+    var icon = document.getElementById('chatIcon');
+    var isHidden = widget.style.display === 'none' || widget.style.display === '';
+    if (isHidden) {
+        widget.style.display = 'flex';
+        widget.style.flexDirection = 'column';
+        icon.className = 'fas fa-times text-white text-xl';
+        document.getElementById('chatInput').focus();
+    } else {
+        widget.style.display = 'none';
+        icon.className = 'fas fa-comments text-white text-xl';
+    }
+}
+
+function appendMessage(text, isUser) {
+    var container = document.getElementById('chatMessages');
+    var div = document.createElement('div');
+    div.className = 'flex gap-2' + (isUser ? ' justify-end' : '');
+
+    if (!isUser) {
+        var avatar = document.createElement('div');
+        avatar.className = 'w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1';
+        avatar.innerHTML = '<i class="fas fa-robot text-white text-xs"></i>';
+        div.appendChild(avatar);
+    }
+
+    var bubble = document.createElement('div');
+    bubble.style.maxWidth = '260px';
+    if (isUser) {
+        bubble.className = 'bg-blue-600 rounded-2xl rounded-tr-none px-3 py-2 text-sm text-white';
+    } else {
+        bubble.className = 'dark:bg-slate-700 bg-gray-100 rounded-2xl rounded-tl-none px-3 py-2 text-sm dark:text-slate-100 text-gray-800';
+    }
+    bubble.textContent = text;
+    div.appendChild(bubble);
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+}
+
+function showTyping() {
+    var container = document.getElementById('chatMessages');
+    var div = document.createElement('div');
+    div.id = 'typingIndicator';
+    div.className = 'flex gap-2';
+    div.innerHTML = '<div class="w-7 h-7 bg-blue-600 rounded-full flex items-center justify-center flex-shrink-0 mt-1"><i class="fas fa-robot text-white text-xs"></i></div><div class="dark:bg-slate-700 bg-gray-100 rounded-2xl rounded-tl-none px-4 py-3"><div class="typing-indicator"><span></span><span></span><span></span></div></div>';
+    container.appendChild(div);
+    container.scrollTop = container.scrollHeight;
+}
+
+function hideTyping() {
+    var el = document.getElementById('typingIndicator');
+    if (el) el.remove();
+}
+
+async function sendMessage() {
+    var input = document.getElementById('chatInput');
+    var message = input.value.trim();
+    if (!message) return;
+
+    input.value = '';
+    input.disabled = true;
+    appendMessage(message, true);
+    showTyping();
+
+    try {
+        var response = await fetch('/chatbot/', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'X-CSRFToken': getCookie('csrftoken')
+            },
+            body: JSON.stringify({ message: message })
+        });
+        var data = await response.json();
+        hideTyping();
+        appendMessage(data.response, false);
+    } catch (err) {
+        hideTyping();
+        appendMessage('Desculpe, ocorreu um erro. Tente novamente.', false);
+    } finally {
+        input.disabled = false;
+        input.focus();
+    }
+}
+
+function getCookie(name) {
+    var value = '';
+    document.cookie.split(';').forEach(function(c) {
+        var parts = c.trim().split('=');
+        if (parts[0] === name) value = decodeURIComponent(parts[1] || '');
+    });
+    return value;
+}
+
+// ===== SKILLS: anima barras quando visíveis =====
+function animateSkillBars() {
+    var bars = document.querySelectorAll('.skill-bar-fill');
+    if (!bars.length) return;
+    var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                var bar = entry.target;
+                bar.style.width = bar.getAttribute('data-width') + '%';
+                observer.unobserve(bar);
+            }
+        });
+    }, { threshold: 0.3 });
+    bars.forEach(function(bar) { observer.observe(bar); });
+}
+
+document.addEventListener('DOMContentLoaded', animateSkillBars);
+
+// ===== SMOOTH SCROLL para links internos =====
+document.addEventListener('DOMContentLoaded', function() {
+    document.querySelectorAll('a[href^="#"]').forEach(function(a) {
+        a.addEventListener('click', function(e) {
+            var href = a.getAttribute('href');
+            if (href === '#') return;
+            var target = document.querySelector(href);
+            if (target) {
+                e.preventDefault();
+                target.scrollIntoView({ behavior: 'smooth' });
+                closeMobileMenu();
+            }
+        });
+    });
+});
+</script>
+
+{% block extra_js %}{% endblock %}
+</body>
+</html>

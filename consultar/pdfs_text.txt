@@ -1,0 +1,297 @@
+﻿=== consultar/AccessFive.pdf ===
+AccessFive 
+Inteligência Artiﬁcial a Serviço da Segurança Industrial 
+Indústria 4.0 Prevenção de Riscos Economia 
+
+---
+Acidentes de Trabalho 
+623.000 
+em 2023 Mortes 
+2.583 
+em 2024 Custos Anuais 
+R$ 115 
+bilhões 
+Acidentes de trabalho no Brasil 
+Fiscalização humana é falha. 
+Falhas custam vidas e bilhões. 
+---
+A Oportunidade 
+Indústria 4.0 
+Integração de tecnologias 
+numéricas e automação 
+Empresas buscam otimizar operações e 
+garantir segurança 
+Automação inteligente é indispensável 
+para prevenção de riscos Crescimento da IA em Segurança 
+Adoção de IA em segurança cresce > 28,5% 
+ao ano 
+Alcançando 38 bilhões de dólares até 2035 
+3/7
+
+---
+A Solução - AccessFive 
+Segurança Preditiva em Tempo Real 
+Monitoramento 
+24/7 
+Intervenção 
+Imediata 
+Valor 
+Estratégico 
+conformidade/custos 
+---
+O Motor da Prevenção: Como o AccessFive Funciona 
+CAPTAÇÃO 
+Usa câmeras e 
+sensores 
+existentes 
+(CCTV/Io T) 
+PROCESSAMENTO 
+Detecção em 
+tempo real de 
+EPIs e zonas de 
+risco 
+ANÁLISE 
+PREDITIVA 
+IA cruza dados e 
+dispara o Gatilho 
+de Risco por falha 
+de conformidade 
+Alerta sonoro (in loco) + notiﬁcação imediata ao supervisor AÇÃO IMEDIATA 
+---
+=== consultar/edital2026.pdf ===
+ 
+ 
+   
+ EDITAL DE CHAMADA PÚBLICA FAPESC  N.º 024/2026 
+ PROGRAMA NASCER DE PRÉ -INCUBAÇÃO DE IDEIAS INOVADORAS PARA O 
+ECOSSISTEMA CATARINENSE DE INOVAÇÃO  — VII EDIÇÃO  
+ 
+A FUNDAÇÃO DE AMPARO À PESQUISA E INOVAÇÃO DO ESTADO DE SANTA 
+CATARINA ( FAPESC ), em colaboração com a  SECRETARIA DE ESTADO DA CIÊNCIA, 
+TECNOLOGIA E INOVAÇÃO (SCTI) e o SERVIÇO DE APOIO ÀS MICRO E PEQUENAS 
+EMPRESAS DE SANTA CATARINA (SEBRAE/SC),  definida no âmbito d o Convênio  n.º 
+2026TR000 471, torna público o lançamento d o presente  Edital de  Chamada Pública e convida  
+proponentes a  apresentarem propostas  para participação no Programa Nascer de Pré -Incubação 
+de Ideias Inovadoras  — VII Edição , com o objetivo de fomentar a transformação de ideias em 
+produtos (bens e/ou serviços) ou  processos inovadores, bem como incentiva r o fortalecimento  do 
+ecossistema de Ciência, Tecnologia e Inovação (CTI) catarinense , nos termos dos arts. 218, 219, 
+219-A e 219 -B da Constituição da República Federativa do Brasil , de 1988 ; e arts. 136, II e 176 da 
+Constituição do Estado de Santa Catarina , de 1989 , da Lei Federal n.º 10.973 /2004 , da Lei Estadual 
+n.º 14.328 /2008 , regulamentada pelo Decreto n.º 2.372 /2009 , além do Decreto Estadual n.º 
+438/2024  e demais decretos específicos vigentes,  considerando:   
+● que a FAPESC , agência de fomento executora da política estadual de ciência, tecnologia 
+e inovação, tem como finalidade a promoção do ecossistema catarinense de Ciência, 
+Tecnologia e Inovação (CTI) para o avanço de todas as áreas do conhecimento, o equilíbrio 
+regional,  o desenvolvimento econômico sustentável e a melhoria da qualidade de vida da 
+população do Estado;  
+● que compete à FAPESC  apoiar e promover a realização de estudos, a execução e 
+divulgação de programas e projetos de pesquisa científica básica e aplicada, individuais ou 
+institucionais, e o desenvolvimento de produtos e processos tecnológicos, de acordo com  
+as diretrizes da SCTI;  
+● que compete à FAPESC  promover o intercâmbio e a cooperação técnico -científica regional, 
+nacional e internacional; fomentar a internacionalização de empresas catarinenses 
+inovadoras; fomentar o desenvolvimento tecnológico inovativo das empresas catarinenses 
+e organizações públ icas ou privadas, preferencialmente em parceria com instituições de 
+ensino e pesquisa situadas no Estado, por meio da transferência de conhecimento e 
+interação de competências, podendo, para tanto, subvencionar a permanência de 
+pesquisadores de alto nível no âmbito de programas específicos;  
+● que compete à SCTI realizar estudos para subsidiar a formulação de planos e programas 
+de desenvolvimento científico e tecnológico no Estado de Santa Catarina;  
+● que compete à SCTI promover a CTI de forma articulada com os programas estruturantes 
+e o desenvolvimento econômico sustentável;  
+● que o papel do SEBRAE é o de promover a competitividade e o desenvolvimento 
+sustentável dos pequenos negócios e estimular o empreendedoris
+---
+ 
+ 
+   
+ empresas de diversos portes, instituições âncoras, universidades, centros de pesquisa, investidores 
+e instituições de fomento à inovação e ao  empreendedorismo, conforme os critérios estabelecidos 
+no Decreto N.º  869/2025, nos Guias de Desenvolvimento de Ecossistemas e Centros de Inovação 
+e em normativas complementares.  
+ 
+1.1.2.  Cidades -polo: cidades com Centro de Inovação em operação e pertencentes à Rede 
+Catarinense de Centros de Inovação (RCCI), servindo como polo disseminador do Programa Nascer 
+para as cidades do entorno.  
+ 
+1.1.3.  Comitê Gestor do Programa Nascer: grupo  composto por representantes da FAPESC , 
+da SCTI e do SEBRAE/SC , responsável por assegurar a legitimidade e a transparência das ações 
+do Programa. Compete ao comitê deliberar e fiscalizar os processos, garantindo que as decisões 
+sejam pautadas pela impessoalidade e pelo alinhamento com os objetivos  institucionais.  
+ 
+1.1.4.  Inova Simples:  regime especial simplificado, instituído pela Lei Complementar n .º 
+167/2019, que concede às iniciativas empresariais de caráter incremental ou disruptivo , 
+autodeclar adas  como startups  ou empresas de inovação , tratamento diferenciado com vistas a 
+estimular sua criação, formalização, desenvolvimento e consolidação como agentes indutores de 
+avanços tecnológicos e da geração de emprego e renda.  
+ 
+1.1.5.  Pitch : apresentação de 03 (três)  minutos , cujo objetivo é  demonstrar um panorama  do 
+negócio, de modo que os investidores entendam o seu potencial de geração de lucro e possam 
+oferecer propostas de investimento.  
+ 
+1.1.6.  Programa de  pré-incubação:  conjunto de atividades de orientação, acompanhamento, 
+suporte e capacitação  voltadas a o auxílio de empreendedores na transforma ção de  suas ideias de 
+negócio em empresas juridicamente  formalizadas , por meio de ferramentas, serviços de consultoria, 
+mentoria, assessoria, cursos, apoio institucional, networking  e aproximação com entidades 
+financeiras e de investimento.  
+ 
+1.1.7.  Subvenção Econômica:  instrumento celebrado entre a FAPESC  e empresas ou entidades 
+catarinenses de direito privado sem fins lucrativos , voltadas a atividades de pesquisa, com o objetivo  
+de promover  o desenvolvimento de processos, bens e serviços inovadores, mediante a concessão 
+de recursos financeiros, humanos, materiais ou de infraestrutura, destinados a apoiar atividades de 
+pesquisa e desenvolvimento voltadas às prioridades da política catarinense  de inovação , Lei 
+Estadual n.º 14.328, de 15 de janeiro de 2008 , regulamenta da pelo  Decreto n.º 2.372, de 9 de junho 
+de 2009.  
+ 
+1.1.8.  Super Pitch  Day: evento de encerramento do Programa Nascer , no qual são realizadas  
+as apresentações das ideias inovadoras, classificadas em primeiro lugar no Pitch  Day Regional das 
+15 (quinze) cidades -polo, para uma banca avaliadora composta por 05 (cinco) representantes, 
+sendo 01 (um) representante da FAPESC , 01 (um) representante da SCTI, 01 (um) representante 
+do
+---
+ 
+ 
+   
+ 3.2. Serão formadas até 20 (vinte ) turmas de pré -incubação de ideias inovadoras, distribuídas 
+entre os Centros de Inovação pertencentes à Rede Catarinense de Centros de Inovação (RCCI) , 
+sediados nas cidades -polo, conforme disposto n o Anexo I  desta Chamada Pública.  
+3.3. Cada  turma será composta por, no mínimo , 20 (vinte ) e, no máximo , 40 (quarenta ) 
+participantes , por cidade -polo, de acordo com os critérios  estabelecidos. O s(as) demais 
+candidatos (as) irão compor uma lista de espera, respeitando a ordem de classificação, para  
+eventual  chamada no caso de vacância de espaço.  
+3.4. Serão selecionadas até 800 (oitocentas ) propostas, distribuídas entre as cidades -polo. 
+Cada proposta poderá contar com equipe de até 05 (cinco) participantes, incluindo o(a) proponente 
+da proposta.  
+3.5. A escolha d a cidade -polo deve rá ser feita no ato da inscrição, sendo vedada qualquer 
+alteração posterior.  
+ 
+4. DOS RESULTADOS ESPERADOS  
+ 
+4.1. Desenvolvimento de  novos produtos (bens e serviços) , processos inovadores  ou 
+tecnologias , a serem inseridas no ecossistema  catarinense . 
+4.2. Validação da ideia inovadora e desenvolvimento do modelo de negócio, em conformidade 
+com as diretrizes estabelecidas na Trilha de Inovação da FAPESC . 
+4.3. Criação de novos CNPJs,  realização das  primeiras vendas , prospeção de clientes e  
+geração de  faturamento empresarial . 
+ 
+5. DOS CRITÉRIOS DE ADMISSIBILIDADE  
+ 
+5.1. As propostas ao Programa Nascer  poderão ser submetidas  por pessoas físicas (ainda sem 
+empresa constituída) ou pessoas jurídicas, por meio de seus responsáveis legais, cujas empresas 
+tenham sido formalmente constituídas há até 12 (doze) meses da data de lançamento desta 
+Chamada Pública.  
+5.2. O processo de admissibilidade das ideias inovadoras consiste no preenchimento 
+obrigatório dos campos  da proposta, na verificação dos critérios deste  Edital e na análise dos 
+documentos comprobatórios , que devem estar  legíveis no momento da submissão . 
+5.3. A admissibilidade  das ideias inovadoras está condicionada ao atendimento dos  seguintes  
+critérios :  
+ 
+5.3.1.  Da pessoa física proponente (coordenadora do projeto) : 
+a) pessoa física, coordenador (a) da ideia inovadora de conversão de conhecimento 
+tecnológico em novos produtos (bens e/ou serviços) ou processos inovadores , com 
+potencial de desenvolvimento e relevância para a região, estado e país; 
+b) residir no Estado de Santa Catarina ; 
+c) estar em situação regular no país, no caso d e estrangeiro (a); 
+d) estar regular quanto à prestação de contas de recursos estaduais recebidos e adimplente 
+em relação às obrigações assumidas perante  a Administração Pública Estadual e às 
+Fazenda s Pública s Municipal, Estadual e Federal ; 
+e) ter 18  (dezoito)  anos  completos na data de publicação da presente Chamada Pública ; 
+f) não ser sócio de outras empresas cuja atividade seja afim à ideia inovadora.  
+ 
+5.3.2.  Do(a) proponente com empresa constituída:  
+a) res
+---
+ 
+ 
+   
+ Junta Comercial do Estado (JUCESC) e CNPJ ativo , com, no máximo, 12 (doze) meses de 
+constituição, contado s até a data de lançamento desta Chamada Pública . 
+• Possuir faturamento bruto , no último exercício , de até R$ 180.000,00 (cento e oitenta 
+mil reais), comprovado por meio da apresentação do  Balanço Patrimonial e da 
+Demonstração de Resultado do Exercício (DRE) referentes ao último ano fiscal (2025), 
+ambos devidamente assinados por profissional de contabilidade com registro ativo no 
+Conselho Regional de Contabilidade (CRC) . 
+• É permitida a participação de Microempreendedor Individual (MEI) , desde que a 
+proposta seja compatível com as atividades operacionais definidas no Cartão CNPJ.  
+• É permitida a participação de empresa qualificada dentro do Programa Inova Simples, 
+nos termos da Lei Complementar n .º 167/2019.  
+• A data da inscrição indicada no Certificado da Empresa Simples de Inovação ser á 
+considerada para fins de cumprimento da data limite estabelecida no item 5.1. deste 
+Edital.  
+• Ter CNAE, definido em Cartão CNPJ, compatível com a proposta inovadora.  
+• Não são passíveis de apoio filiais ou grupos com sede em outros estados.  
+ 
+5.3.3.  Da equipe técnica , caso houver  
+a) residir no Estado de Santa Catarina ; 
+b) estar em situação regular no país, se estrangeiro (a); 
+c) estar regular quanto à prestação de contas de recursos estaduais recebidos e adimplente 
+em relação às obrigações assumidas com a Administração Pública Estadual e a Fazenda 
+Pública Municipal, Estadual e Federal ; 
+d) ter 18  (dezoito)  anos  completos na data de publicação da presente Chamada Pública ; 
+e) estar cadastrado(a) na Plataforma Nascer Digital . 
+ 
+5.3.4.  Da proposta  
+a) caracteriza -se como proposta de “ideia inovadora” aquela que contempla produtos (bens 
+e/ou serviços) ou processos com potencial de inovação, passíveis de se transformar em 
+negócios que incorporem tecnologias novas ou aprimoradas.  
+b) o nome atribuído  ao projeto na fase de seleção das Ideias Inovadoras  não poderá ser 
+alterado em nenhum momento, devendo ser mantido na submissão da proposta ao Edital 
+de Chamada Pública de Subvenção Econômica, caso o projeto seja classificado entre os 
+três primeiros colocados no Super Pitch Day . Portanto, recomenda -se que o título da 
+proposta seja definido com atenção.   
+c) ser submetida por único(a) proponente, na modalidade  on-line, via: 
+https://nascer.sc.gov.br . 
+d) caso seja submetida mais de uma proposta pelo(a) mesmo(a) proponente, será 
+considerada válida apenas a última, de acordo com a ordem cronológica de submissão.  
+e) ser desenvolvida no Estado de  Santa Catarina.  
+f) não ter sido classificada entre os  03 (três) finalistas no Super Pitch Day  em edições 
+anteriores do Programa Nascer, conforme os Editais de Chamada Pública FAPESC  N.º 
+12/2024, N.º 06/2025 e N.º 03/2026.  
+g) não serão aceitas propostas por qualquer outro meio, tampouco após o prazo de 
+recebimento estabelecido no cronograma desta 
+---
+ 
+ 
+   
+ c) pessoas físicas que possuam vínculo de parentesco, direto ou indireto, até o terceiro grau 
+(cônjuge, companheiro (a), parente em linha reta, colateral ou por afinidade) com membros 
+da Diretoria Executiva ou do corpo funcional da FAPESC , da SCTI, do Sistema SEBRAE 
+e dos Centros de Inovação, bem como aquelas que tenham atuado como colaborador(a) 
+ou funcionários (as) dessas instituições nos últimos 180 (cento e oitenta) dias anteriores à 
+inscrição, independentemente do motivo do desligamento. Essas restrições visam  evitar 
+conflitos de interesse, assegurando a imparcialidade e a transparência em todas as etapas 
+do processo, especialmente naquelas que envolvam concessão de subvenções ou outros 
+benefícios financeiros.  
+ 
+5.5. Durante a etapa de inscrição, será automaticamente inabilitad o o(a) proponente que deixar 
+de atender integralmente às exigências d a presente Chamada Pública.  
+5.6. Os(as) participantes poderão  passar por processo de diligência prévia , a qualquer 
+momento, para análise de mídias negativas, processos judiciais, entre outros  aspectos . Situações 
+contrárias  ao Código de Ética da FAPESC , da SCTI e do SEBRAE /SC serão passíveis de 
+desclassificação.  
+5.7. O Comitê Gestor do Programa Nascer não se responsabiliza por eventuais denúncias de 
+terceiros, questionamentos ou processos administrativos e/ou judiciais decorrentes de possível 
+plágio de projetos fomentados, má  conduta científica ou qualquer outra irregularidade nas pesquisas 
+realizadas, ficando  desde já estabelecido  que toda e qualquer responsabilidade de eventual 
+indenização não recairá sobre a Comitê Gestor do Programa Nascer.  
+ 
+6. DA INSCRIÇÃO IDEIA IN OVADORA E  SUBMISSÃO DOS DOCUMENTOS  
+ 
+6.1. As inscrições deverão ser realizadas, exclusivamente,  por meio do link: 
+https://nascer.sc.gov.br/ , mediante o preenchimento completo dos campos de inscrição e a 
+apresentação, obrigatória  dos documentos listado s no item 6.9. 
+6.2. Não serão aceitas inscrições enviadas por qualquer outro meio, nem aquelas submetidas 
+após o prazo final definido no cronograma . 
+6.3. A proposta poderá ser submetida até as 23 h59 (vinte e três horas e cinquenta e nove 
+minutos) , horário de Brasília , da data  limite para submissão das inscrições, determinad a no 
+cronograma.  
+6.4. A equipe executora da metodologia do Programa Nascer e a FAPESC  não se 
+responsabilizam por qualquer problema na submissão das propostas decorrente de  eventuais falhas 
+de conexão com a internet, falta de energia elétrica, congestionamento das linhas de comunicação, 
+bem como outros fatores de ordem técnica que impossibilitem a conexão ou a transferência de 
+dados. Tais eventualidades não serão aceitas como argumento para a submissão de propostas 
+após o prazo  estabelecido . Recomenda -se que as propostas sejam encaminhadas com prudente 
+antecedência.  
+6.5. Expirado o prazo indicado na presente Chamada Pública, nenhuma outra proposta será 
+recebida, assim como não serão aceitos
+---

@@ -1,0 +1,101 @@
+COMO LINKAR OS PROJETOS DO PORTFÓLIO AO GITHUB
+===============================================
+
+Os links dos projetos ficam em:
+  core/views.py → lista PROJETOS → campos "github_url" e "demo_url"
+
+Atualmente todos estão com '#' (placeholder). Basta substituir pelo link real.
+
+
+-----------------------------------------------
+PASSO A PASSO
+-----------------------------------------------
+
+1. CRIE O REPOSITÓRIO NO GITHUB
+   - Acesse https://github.com/new
+   - Dê um nome (ex: sistema-supervisorio-qta)
+   - Deixe público ou privado conforme quiser
+   - NÃO marque "Add a README" se o projeto já tem arquivos locais
+   - Clique em "Create repository"
+
+2. SUBA O CÓDIGO DO PROJETO
+   No terminal, dentro da pasta do projeto:
+
+     git init
+     git add .
+     git commit -m "Primeiro commit"
+     git branch -M main
+     git remote add origin https://github.com/renatoteodoro/NOME-DO-REPO.git
+     git push -u origin main
+
+   Se o repositório já existe localmente com git:
+     git remote add origin https://github.com/renatoteodoro/NOME-DO-REPO.git
+     git push -u origin main
+
+3. COPIE O LINK DO REPOSITÓRIO
+   O link fica no formato:
+     https://github.com/renatoteodoro/NOME-DO-REPO
+
+4. ATUALIZE O PORTFÓLIO
+   Abra o arquivo:
+     core/views.py
+
+   Encontre a lista PROJETOS e substitua '#' pelo link real.
+   Exemplo:
+
+     ANTES:
+       'github_url': '#',
+       'demo_url': '#',
+
+     DEPOIS:
+       'github_url': 'https://github.com/renatoteodoro/sistema-supervisorio-qta',
+       'demo_url': 'https://seu-deploy.railway.app',
+
+   Faça isso para cada projeto.
+
+
+-----------------------------------------------
+MAPEAMENTO DOS 4 PROJETOS
+-----------------------------------------------
+
+Projeto 1 — Sistema Supervisório QTA (IFSC)
+  github_url → link do repositório no GitHub
+  demo_url   → link do deploy (Railway, Render etc.) ou '#' se não tiver
+
+Projeto 2 — API REST Django
+  github_url → link do repositório no GitHub
+  demo_url   → link da documentação Swagger ou deploy
+
+Projeto 3 — Chatbot com IA (LangChain)
+  github_url → link do repositório no GitHub
+  demo_url   → link do deploy ou '#'
+
+Projeto 4 — Integração Mercado Pago
+  github_url → link do repositório no GitHub
+  demo_url   → link do deploy ou '#'
+
+
+-----------------------------------------------
+SE O PROJETO NÃO TEM REPOSITÓRIO AINDA
+-----------------------------------------------
+
+Deixe 'github_url': '#' por enquanto.
+O botão GitHub no card continuará aparecendo, mas não navegará a lugar algum.
+Quando criar o repositório, volte e substitua o '#' pelo link real.
+
+Para ocultar o botão de um projeto específico enquanto não tem repositório,
+adicione a chave 'mostrar_github': False no dicionário do projeto em views.py
+e ajuste o template — mas isso só é necessário se quiser um visual mais limpo.
+
+
+-----------------------------------------------
+DICA: README EM CADA REPOSITÓRIO
+-----------------------------------------------
+
+Crie um README.md em cada projeto com:
+  - Descrição do que o projeto faz
+  - Stack utilizada
+  - Como rodar localmente
+  - Prints ou GIF de demonstração (opcional, mas valoriza muito)
+
+Isso melhora a impressão de quem visita o repositório pelo portfólio.
