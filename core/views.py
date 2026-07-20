@@ -38,21 +38,24 @@ Em transição complementar para desenvolvimento de software. Stack principal: P
 EXPERIÊNCIAS:
 1. Intelbras S/A (Jun/2025–Maio/2026): Analista de Treinamento Técnico Pleno. Desenvolvimento trilhas EAD/presencial para BU-SEG, conteúdos humanizados, gestão instrutores.
 2. Claro Brasil (Mai/2023–Jun/2025): Técnico IAT I. Manutenção HFC/GPON, configuração redes, SLA.
-3. Autônomo (Jul/2020–Abr/2023): Empreendedor em segurança eletrônica e elétrica. CFTV, alarmes, controle de acesso. Participou do Programa Nascer de Pré-Incubação (FAPESC + SCTI + SEBRAE/SC — VI Edição 2025) com o projeto AccessFive — startup de IA para segurança industrial: detecção de EPIs e zonas de risco em tempo real usando câmeras CCTV e IoT existentes, análise preditiva e alertas imediatos ao supervisor.
+3. Autônomo (Jul/2020–Abr/2023): Empreendedor em segurança eletrônica e elétrica. CFTV, alarmes, controle de acesso. Participou do Programa Nascer de Pré-Incubação (FAPESC + SCTI + SEBRAE/SC — VI Edição 2025) com o projeto AccessFive — projeto de IA para segurança industrial: detecção de EPIs e zonas de risco em tempo real usando câmeras CCTV e IoT existentes, análise preditiva e alertas imediatos ao supervisor.
 4. Ezentis Brasil (Jan/2018–Jul/2020): Técnico Telecom. Torres celulares TIM 2G/3G/4G, NR10, NR35.
 5. FIESC-SENAI (Ago/2012–Dez/2016): Coordenador/Professor. PRONATEC, cursos elétrica/eletrônica/telecom.
 6. Dígitro Tecnologia (Nov/2005–Ago/2012): Técnico Eletrônica. Suporte engenharia, projetos energia solar.
 
 PROJETOS DE SOFTWARE:
-1. Portfólio: Django 5, Tailwind CSS, OpenAI GPT-4o-mini, WhiteNoise, Python, JavaScript. Site portfólio profissional com chatbot de IA integrado, dark/light mode, timeline de experiências com fotos reais e formulário de contato via SMTP.
-2. WathsBotApp: FastAPI, LangChain, OpenAI, ChromaDB, Redis, Evolution API, Playwright, Docker. Assistente RAG para WhatsApp com debounce inteligente, memória de sessão via Redis, scraping automático de base de conhecimento a cada 30 dias.
-3. ADA: Django, OpenAI GPT-4o-mini, Whisper (STT), TTS, Playwright, ReportLab. Assistente virtual multi-modal desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). Voz bidirecional, acessibilidade com VLibras, painel admin com exportação CSV/Excel/PDF. Deploy na AWS.
-4. PlannerEdu: Django 5.2, PostgreSQL, Docker, Chart.js, SortableJS, Bootstrap 5. Plataforma de gestão de produção educacional com calendário anual, dashboard analítico com KPIs, Kanban drag-and-drop e sistema multi-usuário com permissões. Deploy na IONOS.
-5. Sistema Supervisório QTA (IFSC): Arduino, ESP32, MQTT, Django, PostgreSQL, ApexCharts. Monitoramento em tempo real de Quadro de Transferência Automática — ESP32 coleta dados via sensores, publica via MQTT, backend Django persiste e exibe em dashboard com gráficos em tempo real.
-6. Beton Dekor: Django 6.0, htmx, Cloudinary, PostgreSQL, Docker, Gunicorn. Site institucional com catálogo de produtos para empresa de revestimentos decorativos, replicando layout Figma. Galeria com Cloudinary, formulário de contato SMTP, responsivo e deploy na Hostinger.
+1. Portfólio: Django 5, Tailwind CSS, OpenAI GPT-4o-mini, WhiteNoise, Python, JavaScript. Site portfólio profissional com chatbot de IA integrado, dark/light mode, timeline de experiências com fotos reais e formulário de contato via SMTP. Em produção (portfolio-renato.fly.dev).
+2. Beton Dekor: Django 6.0, htmx, Cloudinary, PostgreSQL, Docker, Gunicorn. Site institucional com catálogo de produtos para empresa de revestimentos decorativos, replicando layout Figma. Galeria com Cloudinary, formulário de contato SMTP, responsivo. Em produção na Hostinger (betondekor.com.br).
+3. EnergIA: Django 5, PostgreSQL/TimescaleDB, MQTT, DRF, scikit-learn, LangChain, Flet, Docker. Plataforma IoT de monitoramento de consumo de energia elétrica: ingestão MQTT, forecasting de fatura e NILM, assistente WhatsApp via LangChain/RAG, API REST alimentando app mobile em Flet. Em produção (energiasm.online); resultado preliminar admissível no Programa Nascer FAPESC 2026.
+4. PlannerEdu: Django 5.2, PostgreSQL, Docker, Chart.js, SortableJS, Bootstrap 5. Plataforma de gestão de produção educacional com calendário anual, dashboard analítico com KPIs, Kanban drag-and-drop e sistema multi-usuário com permissões. Sem deploy ativo no momento (código completo no GitHub).
+5. ADA: Django, OpenAI GPT-4o-mini, Whisper (STT), TTS, Playwright, ReportLab. Assistente virtual multi-modal desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). Voz bidirecional, acessibilidade com VLibras, painel admin com exportação CSV/Excel/PDF. Deploy pausado atualmente (custos AWS).
+6. WathsBotApp: FastAPI, LangChain, OpenAI, ChromaDB, Redis, Evolution API, Playwright, Docker. Assistente RAG para WhatsApp com debounce inteligente, memória de sessão via Redis, scraping automático de base de conhecimento a cada 30 dias. Sem deploy público (código no GitHub).
 
-PROGRAMA NASCER / PROJETO ACCESSFIVE:
-Renato participa do Programa Nascer de Pré-Incubação de Ideias Inovadoras (FAPESC + SCTI + SEBRAE/SC — VI Edição 2025) com o projeto AccessFive — "Inteligência Artificial a Serviço da Segurança Industrial". O AccessFive é uma startup de IA que usa câmeras CCTV e sensores IoT já existentes nas empresas para detectar automaticamente o não-uso de EPIs e zonas de risco em tempo real, disparando alertas imediatos ao supervisor. O mercado: 623 mil acidentes/ano no Brasil, 2.583 mortes em 2024, R$ 115 bilhões em custos anuais. O setor de IA para segurança cresce mais de 28,5% ao ano, alcançando US$ 38 bilhões até 2035.
+EMPREENDEDORISMO E INOVAÇÃO:
+1. Programa Nascer 2025 (FAPESC + SEBRAE/SC — VI Edição): pré-incubação de ideias inovadoras do ecossistema catarinense. Projeto: AccessFive — "Inteligência Artificial a Serviço da Segurança Industrial", projeto que usa câmeras CCTV e sensores IoT já existentes nas empresas para detectar automaticamente o não-uso de EPIs e zonas de risco em tempo real, disparando alertas imediatos ao supervisor. Mercado: 623 mil acidentes/ano no Brasil, 2.583 mortes em 2024, R$ 115 bilhões em custos anuais; setor de IA para segurança cresce 28,5%/ano, alcançando US$ 38 bilhões até 2035.
+2. Programa Nascer 2026 (FAPESC — VII Edição, Edital 024/2026, polo Florianópolis, resultado preliminar admissível): mesma pré-incubação, agora com o projeto EnergIA — Smart Meter, plataforma IoT de monitoramento e análise de consumo de energia elétrica.
+3. Hackathon Tech Floripa 2026 — 1ª Jornada Incubintech (promovido pelo Incubintech/IFSC, com apoio da Receita Federal e do poder público): Renato compete com o EnergIA no Desafio 6 — Medidor como Assistente de Energia. Em andamento, fase final em 25/07/2026 em Florianópolis.
+4. Beton Dekor: projeto de desenvolvimento autônomo/freelance — captação de cliente, projeto do zero e deploy em produção, sem vínculo com programa de fomento.
 
 FORMAÇÃO:
 - Especialização Computação Científica para a Indústria – IFSC (em andamento)
@@ -103,6 +106,105 @@ PROJETOS = [
     },
     {
         'id': 2,
+        'titulo': 'Beton Dekor — Site Institucional',
+        'descricao': (
+            'Site institucional com catálogo de produtos para empresa de revestimentos decorativos, '
+            'replicando fielmente o layout Figma. Galeria de imagens com Cloudinary, '
+            'formulário de contato com SMTP, interfaces responsivas (mobile, tablet, desktop) '
+            'e deploy em produção na Hostinger com Docker e Gunicorn.'
+        ),
+        'stack': ['Django 6.0', 'htmx', 'Cloudinary', 'PostgreSQL', 'Docker', 'Gunicorn', 'WhiteNoise'],
+        'stack_cores': {
+            'Django 6.0': 'bg-green-700',
+            'htmx': 'bg-blue-600',
+            'Cloudinary': 'bg-indigo-700',
+            'PostgreSQL': 'bg-blue-800',
+            'Docker': 'bg-blue-700',
+            'Gunicorn': 'bg-green-800',
+            'WhiteNoise': 'bg-slate-600',
+        },
+        'github_url': 'https://github.com/renatoteodoro/beton-dekor-deploy',
+        'demo_url': 'https://www.betondekor.com.br/',
+        'destaque': False,
+        'icone': 'fa-store',
+    },
+    {
+        'id': 3,
+        'titulo': 'EnergIA — Plataforma IoT de Monitoramento de Energia',
+        'descricao': (
+            'Plataforma IoT completa de monitoramento e análise de consumo de energia elétrica. '
+            'Django 5 full-stack com 9 apps desacoplados, TimescaleDB para séries temporais de '
+            'telemetria (hypertables), ingestão via MQTT, forecasting de fatura e NILM com '
+            'scikit-learn, e assistente WhatsApp com LangChain/RAG. API REST (DRF) alimenta '
+            'um app mobile em Flet.'
+        ),
+        'stack': ['Django 5', 'PostgreSQL + TimescaleDB', 'MQTT', 'DRF', 'scikit-learn', 'LangChain', 'Flet', 'Docker'],
+        'stack_cores': {
+            'Django 5': 'bg-green-700',
+            'PostgreSQL + TimescaleDB': 'bg-blue-800',
+            'MQTT': 'bg-purple-700',
+            'DRF': 'bg-teal-700',
+            'scikit-learn': 'bg-orange-700',
+            'LangChain': 'bg-green-800',
+            'Flet': 'bg-cyan-700',
+            'Docker': 'bg-blue-700',
+        },
+        'github_url': 'https://github.com/renatoteodoro/EnergIA',
+        'demo_url': 'https://energiasm.online',
+        'destaque': True,
+        'icone': 'fa-bolt',
+    },
+    {
+        'id': 4,
+        'titulo': 'PlannerEdu — Gestão de Produção Educacional',
+        'descricao': (
+            'Plataforma web completa para planejamento anual de produção de conteúdo educacional. '
+            'Calendário interativo com feriados brasileiros, dashboard analítico com KPIs e '
+            'gráficos (Chart.js), sistema Kanban drag-and-drop para cursos EAD/presencial '
+            'e controle multi-usuário com permissões granulares. Deploy previsto na IONOS com Docker.'
+        ),
+        'stack': ['Django 5.2', 'PostgreSQL', 'Docker', 'Chart.js', 'SortableJS', 'Bootstrap 5', 'IONOS'],
+        'stack_cores': {
+            'Django 5.2': 'bg-green-700',
+            'PostgreSQL': 'bg-blue-800',
+            'Docker': 'bg-blue-700',
+            'Chart.js': 'bg-pink-700',
+            'SortableJS': 'bg-yellow-700',
+            'Bootstrap 5': 'bg-purple-700',
+            'IONOS': 'bg-red-700',
+        },
+        'github_url': 'https://github.com/renatoteodoro/planner_edu',
+        'demo_url': '',
+        'destaque': False,
+        'icone': 'fa-calendar-check',
+    },
+    {
+        'id': 5,
+        'titulo': 'ADA — Assistente Virtual Multi-modal',
+        'descricao': (
+            'Assistente conversacional com IA desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). '
+            'Suporte a voz bidirecional via Whisper (STT) e TTS, '
+            'acessibilidade com VLibras (Libras), scraping automático com Playwright, '
+            'e painel administrativo com exportação em CSV, Excel e PDF.'
+        ),
+        'stack': ['Django', 'OpenAI GPT-4o-mini', 'Whisper', 'TTS', 'Playwright', 'ReportLab', 'AWS'],
+        'stack_cores': {
+            'Django': 'bg-green-700',
+            'OpenAI GPT-4o-mini': 'bg-slate-600',
+            'Whisper': 'bg-orange-700',
+            'TTS': 'bg-yellow-700',
+            'Playwright': 'bg-indigo-700',
+            'ReportLab': 'bg-red-700',
+            'AWS': 'bg-amber-700',
+        },
+        'github_url': 'https://github.com/renatoteodoro/ADA',
+        'demo_url': '',
+        'nota_deploy': 'Deploy pausado — custos AWS',
+        'destaque': True,
+        'icone': 'fa-microphone',
+    },
+    {
+        'id': 6,
         'titulo': 'WathsBotApp — Assistente RAG para WhatsApp',
         'descricao': (
             'Assistente virtual para WhatsApp com RAG conversacional baseado em dados '
@@ -123,104 +225,8 @@ PROJETOS = [
         },
         'github_url': 'https://github.com/renatoteodoro/WathsBotApp',
         'demo_url': '',
-        'destaque': True,
+        'destaque': False,
         'icone': 'fa-comments',
-    },
-    {
-        'id': 3,
-        'titulo': 'ADA — Assistente Virtual Multi-modal',
-        'descricao': (
-            'Assistente conversacional com IA desenvolvido no Hackathon 2025 (Jovem Programador — Senac/SC). '
-            'Suporte a voz bidirecional via Whisper (STT) e TTS, '
-            'acessibilidade com VLibras (Libras), scraping automático com Playwright, '
-            'e painel administrativo com exportação em CSV, Excel e PDF. Deploy na AWS.'
-        ),
-        'stack': ['Django', 'OpenAI GPT-4o-mini', 'Whisper', 'TTS', 'Playwright', 'ReportLab', 'AWS'],
-        'stack_cores': {
-            'Django': 'bg-green-700',
-            'OpenAI GPT-4o-mini': 'bg-slate-600',
-            'Whisper': 'bg-orange-700',
-            'TTS': 'bg-yellow-700',
-            'Playwright': 'bg-indigo-700',
-            'ReportLab': 'bg-red-700',
-            'AWS': 'bg-amber-700',
-        },
-        'github_url': 'https://github.com/renatoteodoro/ADA',
-        'demo_url': 'https://projetoada.duckdns.org/chat/',
-        'destaque': True,
-        'icone': 'fa-microphone',
-    },
-    {
-        'id': 4,
-        'titulo': 'PlannerEdu — Gestão de Produção Educacional',
-        'descricao': (
-            'Plataforma web completa para planejamento anual de produção de conteúdo educacional. '
-            'Calendário interativo com feriados brasileiros, dashboard analítico com KPIs e '
-            'gráficos (Chart.js), sistema Kanban drag-and-drop para cursos EAD/presencial '
-            'e controle multi-usuário com permissões granulares. Deploy na IONOS com Docker.'
-        ),
-        'stack': ['Django 5.2', 'PostgreSQL', 'Docker', 'Chart.js', 'SortableJS', 'Bootstrap 5', 'IONOS'],
-        'stack_cores': {
-            'Django 5.2': 'bg-green-700',
-            'PostgreSQL': 'bg-blue-800',
-            'Docker': 'bg-blue-700',
-            'Chart.js': 'bg-pink-700',
-            'SortableJS': 'bg-yellow-700',
-            'Bootstrap 5': 'bg-purple-700',
-            'IONOS': 'bg-red-700',
-        },
-        'github_url': 'https://github.com/renatoteodoro/planner_edu',
-        'demo_url': 'https://planejamentoconteudo.website/admin/login/?next=/',
-        'destaque': False,
-        'icone': 'fa-calendar-check',
-    },
-    {
-        'id': 5,
-        'titulo': 'Sistema Supervisório QTA (IFSC)',
-        'descricao': (
-            'Sistema de monitoramento em tempo real de Quadro de Transferência Automática '
-            'desenvolvido como projeto acadêmico no IFSC. ESP32 coleta dados dos sensores e '
-            'publica via MQTT; backend Django processa e persiste no PostgreSQL; '
-            'dashboard web exibe gráficos em tempo real com ApexCharts e dispara alertas.'
-        ),
-        'stack': ['Arduino', 'ESP32', 'MQTT', 'Django', 'PostgreSQL', 'ApexCharts'],
-        'stack_cores': {
-            'Arduino': 'bg-teal-700',
-            'ESP32': 'bg-blue-700',
-            'MQTT': 'bg-purple-700',
-            'Django': 'bg-green-700',
-            'PostgreSQL': 'bg-blue-800',
-            'ApexCharts': 'bg-orange-700',
-        },
-        'github_url': 'https://github.com/renatoteodoro/SUPERVISORIO',
-        'demo_url': '',
-        'pdf_url': 'core/files/trabalho-supervisorio.pdf',
-        'destaque': False,
-        'icone': 'fa-microchip',
-    },
-    {
-        'id': 6,
-        'titulo': 'Beton Dekor — Site Institucional',
-        'descricao': (
-            'Site institucional com catálogo de produtos para empresa de revestimentos decorativos, '
-            'replicando fielmente o layout Figma. Galeria de imagens com Cloudinary, '
-            'formulário de contato com SMTP, interfaces responsivas (mobile, tablet, desktop) '
-            'e deploy em produção na Hostinger com Docker e Gunicorn.'
-        ),
-        'stack': ['Django 6.0', 'htmx', 'Cloudinary', 'PostgreSQL', 'Docker', 'Gunicorn', 'WhiteNoise'],
-        'stack_cores': {
-            'Django 6.0': 'bg-green-700',
-            'htmx': 'bg-blue-600',
-            'Cloudinary': 'bg-indigo-700',
-            'PostgreSQL': 'bg-blue-800',
-            'Docker': 'bg-blue-700',
-            'Gunicorn': 'bg-green-800',
-            'WhiteNoise': 'bg-slate-600',
-        },
-        'github_url': '',
-        'demo_url': 'https://www.betondekor.com.br/',
-        'destaque': False,
-        'icone': 'fa-store',
     },
 ]
 
@@ -331,7 +337,7 @@ EXPERIENCIAS = [
             'Prestação de serviços em CFTV, alarmes, controle de acesso, telecomunicações e '
             'instalações elétricas industriais e prediais. Participou do Programa Nascer de '
             'Pré-Incubação (FAPESC + SEBRAE/SC — VI Edição 2025) com o projeto AccessFive — '
-            'startup de IA para detecção de EPIs e zonas de risco em ambientes industriais.'
+            'projeto de IA para detecção de EPIs e zonas de risco em ambientes industriais.'
         ),
         'tecnologias': ['CFTV', 'Alarmes', 'Controle de Acesso', 'Elétrica Industrial', 'Empreendedorismo'],
         'foto': 'core/images/exp/autonomo.jpg',
@@ -404,6 +410,57 @@ EXPERIENCIAS = [
     },
 ]
 
+EMPREENDEDORISMO = [
+    {
+        'titulo': 'Programa Nascer 2025',
+        'badge': 'FAPESC + SEBRAE/SC · VI Edição',
+        'descricao': (
+            'Pré-incubação de ideias inovadoras do ecossistema catarinense de inovação. '
+            'Participação com o projeto AccessFive — IA para segurança industrial, detectando '
+            'EPIs e zonas de risco em tempo real via câmeras CCTV e sensores IoT existentes.'
+        ),
+        'projeto': 'AccessFive',
+        'icone': 'fa-shield-halved',
+        'cor_gradiente': 'from-blue-500 to-purple-600',
+    },
+    {
+        'titulo': 'Programa Nascer 2026',
+        'badge': 'FAPESC · VII Edição · Resultado preliminar',
+        'descricao': (
+            'Nova edição do mesmo programa de pré-incubação (Edital FAPESC N.º 024/2026), polo '
+            'Florianópolis. Participação com o projeto EnergIA — Smart Meter, plataforma IoT de '
+            'monitoramento e análise de consumo de energia elétrica.'
+        ),
+        'projeto': 'EnergIA',
+        'icone': 'fa-bolt',
+        'cor_gradiente': 'from-emerald-500 to-cyan-500',
+    },
+    {
+        'titulo': 'Hackathon Tech Floripa 2026',
+        'badge': '1ª Jornada Incubintech · IFSC · Em andamento',
+        'descricao': (
+            'Hackathon de inovação aberta promovido pelo Incubintech (IFSC), com apoio da '
+            'Receita Federal e do poder público. Competindo com o EnergIA no Desafio 6 — '
+            'Medidor como Assistente de Energia. Fase final em 25/07/2026, em Florianópolis.'
+        ),
+        'projeto': 'EnergIA',
+        'icone': 'fa-trophy',
+        'cor_gradiente': 'from-amber-500 to-orange-600',
+    },
+    {
+        'titulo': 'Beton Dekor',
+        'badge': 'Projeto autônomo / freelance',
+        'descricao': (
+            'Desenvolvimento independente de site institucional para empresa de revestimentos '
+            'decorativos: captação do cliente, projeto do zero e deploy em produção, sem '
+            'vínculo com programa de fomento.'
+        ),
+        'projeto': 'Beton Dekor',
+        'icone': 'fa-store',
+        'cor_gradiente': 'from-slate-500 to-slate-700',
+    },
+]
+
 
 # ---------------------------------------------------------------------------
 # Views
@@ -415,14 +472,10 @@ def index(request):
         'projetos': PROJETOS,
         'skills': SKILLS,
         'experiencias': EXPERIENCIAS,
+        'empreendedorismo': EMPREENDEDORISMO,
         'stack_principal': [
             'Python', 'Django', 'DRF', 'LangChain',
             'OpenAI', 'RAG', 'PostgreSQL', 'AWS', 'Git', 'ESP32',
-        ],
-        'accessfive_tags': [
-            'IA Generativa', 'Computer Vision', 'CCTV / IoT',
-            'Detecção de EPIs', 'Análise Preditiva', 'Indústria 4.0',
-            'Prevenção de Riscos', 'Alertas em Tempo Real', 'Django', 'Python',
         ],
     }
     return render(request, 'core/index.html', context)
@@ -546,26 +599,31 @@ def _keyword_response(message: str) -> str:
             'garantindo SLA nas manutenções.'
         )
 
-    if any(w in msg for w in ['nascer', 'accessfive', 'access five', 'startup', 'sebrae', 'fapesc', 'empreendedor', 'epi', 'segurança industrial', 'seguranca industrial']):
+    if any(w in msg for w in ['nascer', 'accessfive', 'access five', 'startup', 'sebrae', 'fapesc', 'empreendedor', 'epi', 'segurança industrial', 'seguranca industrial', 'hackathon', 'incubintech', 'tech floripa', 'beton dekor']):
         return (
-            'Renato participa do Programa Nascer de Pré-Incubação (FAPESC + SEBRAE/SC — VI Edição 2025) '
-            'com o projeto AccessFive — "Inteligência Artificial a Serviço da Segurança Industrial". '
-            'O AccessFive detecta EPIs e zonas de risco em tempo real usando câmeras CCTV/IoT existentes, '
-            'com análise preditiva e alertas imediatos ao supervisor. '
-            'Mercado: 623 mil acidentes/ano, 2.583 mortes em 2024, R$115bi em custos anuais. '
-            'O setor de IA em segurança cresce 28,5%/ano, alcançando US$38bi até 2035.'
+            'Renato tem 4 frentes de empreendedorismo e inovação: '
+            '(1) Programa Nascer 2025 (FAPESC + SEBRAE/SC) com o AccessFive — IA para detecção de EPIs e '
+            'zonas de risco industrial via CCTV/IoT; '
+            '(2) Programa Nascer 2026 (FAPESC, resultado preliminar) com o EnergIA — plataforma IoT de '
+            'monitoramento de energia; '
+            '(3) Hackathon Tech Floripa 2026 — 1ª Jornada Incubintech (IFSC), competindo com o EnergIA no '
+            'Desafio 6 (Medidor como Assistente de Energia), em andamento até 25/07/2026; '
+            '(4) Beton Dekor — projeto autônomo/freelance, do zero ao deploy em produção.'
         )
 
     if any(w in msg for w in ['projeto', 'projetos', 'software', 'sistema']):
         return (
             'Renato desenvolveu 6 projetos principais: '
-            '(1) Portfólio — site pessoal com chatbot de IA, dark/light mode e timeline de experiências (Django 5, Tailwind CSS); '
-            '(2) WathsBotApp — assistente RAG para WhatsApp com Redis, Playwright e auto-atualização da base; '
-            '(3) ADA — assistente multi-modal com voz (Whisper/TTS), acessibilidade e painel admin, '
-            'desenvolvido no Hackathon 2025 (Senac/SC), deploy na AWS; '
-            '(4) PlannerEdu — plataforma Django de gestão educacional com Kanban, dashboard analítico, deploy na IONOS; '
-            '(5) Sistema Supervisório QTA (IFSC) — monitoramento IoT em tempo real com ESP32/MQTT/Django; '
-            '(6) Beton Dekor — site institucional com catálogo Cloudinary e deploy na Hostinger com Django 6.'
+            '(1) Portfólio — site pessoal com chatbot de IA, dark/light mode e timeline de experiências '
+            '(Django 5, Tailwind CSS), em produção; '
+            '(2) Beton Dekor — site institucional com catálogo Cloudinary, em produção na Hostinger (Django 6); '
+            '(3) EnergIA — plataforma IoT de monitoramento de energia com TimescaleDB, MQTT e forecasting via '
+            'scikit-learn, em produção; '
+            '(4) PlannerEdu — plataforma Django de gestão educacional com Kanban e dashboard analítico, '
+            'código no GitHub; '
+            '(5) ADA — assistente multi-modal com voz (Whisper/TTS) e painel admin, desenvolvido no Hackathon '
+            '2025 (Senac/SC), deploy pausado por custos AWS; '
+            '(6) WathsBotApp — assistente RAG para WhatsApp com Redis e Playwright, código no GitHub.'
         )
 
     if any(w in msg for w in ['skill', 'tecnologia', 'stack', 'linguagem', 'python', 'django']):

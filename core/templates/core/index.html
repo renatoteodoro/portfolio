@@ -178,8 +178,8 @@
                         <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Projetos Dev</div>
                     </div>
                     <div class="text-center dark:bg-slate-800 bg-white rounded-xl p-4 border dark:border-slate-700 border-gray-200 shadow-sm">
-                        <div class="text-3xl font-black gradient-text">1</div>
-                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Startup</div>
+                        <div class="text-3xl font-black gradient-text">2</div>
+                        <div class="dark:text-slate-400 text-gray-500 text-xs mt-1 leading-tight">Pré-Incubações</div>
                     </div>
                 </div>
 
@@ -247,8 +247,8 @@
                         Trabalhei em grandes empresas como Intelbras, Claro Brasil, Ezentis e FIESC-SENAI,
                         além de empreender com serviços de segurança eletrônica — período no qual participei
                         do <strong class="text-blue-500">Programa Nascer (FAPESC + SEBRAE/SC)</strong> com o projeto
-                        <strong class="text-purple-500">AccessFive</strong> — startup de IA para segurança industrial,
-                        detectando EPIs e zonas de risco em tempo real com câmeras CCTV e IoT.
+                        <strong class="text-purple-500">AccessFive</strong>, iniciativa de IA para segurança industrial
+                        que detecta EPIs e zonas de risco em tempo real com câmeras CCTV e IoT.
                     </p>
                 </div>
 
@@ -468,6 +468,12 @@
                             Baixar Trabalho
                         </a>
                         {% endif %}
+                        {% if projeto.nota_deploy %}
+                        <span class="flex items-center gap-1.5 dark:text-slate-500 text-gray-400 text-xs font-medium px-3 py-1.5">
+                            <i class="fas fa-circle-pause text-xs"></i>
+                            {{ projeto.nota_deploy }}
+                        </span>
+                        {% endif %}
                     </div>
                 </div>
             </div>
@@ -572,141 +578,37 @@
 
 
 <!-- =============================================================
-     SEÇÃO PROGRAMA NASCER / PROJETO ACCESSFIVE
+     SEÇÃO EMPREENDEDORISMO & INOVAÇÃO
 ============================================================= -->
 <section id="nascer" class="py-20 dark:bg-slate-800/30 bg-gray-100/50 transition-colors duration-300">
     <div class="max-w-6xl mx-auto px-4 sm:px-6">
 
-        <div class="text-center mb-10">
+        <div class="text-center mb-14">
             <span class="text-purple-500 font-semibold text-sm uppercase tracking-widest">Empreendedorismo & Inovação</span>
-            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Programa Nascer &amp; Startup AccessFive</h2>
+            <h2 class="text-3xl sm:text-4xl font-bold dark:text-white text-gray-900 mt-2">Programas, Hackathons &amp; Projetos Autônomos</h2>
             <div class="w-16 h-1 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto mt-3 rounded-full"></div>
-            <p class="dark:text-slate-400 text-gray-500 mt-3 text-sm max-w-xl mx-auto">
-                Pré-Incubação de Ideias Inovadoras — FAPESC · SCTI · SEBRAE/SC — VI Edição 2025
-            </p>
         </div>
 
-        <!-- Card principal com gradiente de borda -->
-        <div class="max-w-5xl mx-auto">
-            <div class="relative rounded-2xl overflow-hidden"
-                style="background: linear-gradient(135deg, #3b82f6, #8b5cf6); padding: 2px;">
-                <div class="dark:bg-slate-800 bg-white rounded-2xl p-8 sm:p-10">
-
-                    <!-- Header do projeto -->
-                    <div class="flex flex-col sm:flex-row items-start sm:items-center gap-5 mb-8 pb-8 border-b dark:border-slate-700 border-gray-200">
-                        <div class="inline-flex items-center justify-center w-16 h-16 rounded-2xl flex-shrink-0"
-                            style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
-                            <i class="fas fa-shield-halved text-white text-2xl"></i>
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto">
+            {% for item in empreendedorismo %}
+            <div class="dark:bg-slate-800 bg-white rounded-2xl border dark:border-slate-700 border-gray-200 shadow-sm card-hover overflow-hidden">
+                <div class="h-1 bg-gradient-to-r {{ item.cor_gradiente }}"></div>
+                <div class="p-6">
+                    <div class="flex items-center gap-3 mb-3">
+                        <div class="w-10 h-10 rounded-xl bg-gradient-to-br {{ item.cor_gradiente }} flex items-center justify-center flex-shrink-0">
+                            <i class="fas {{ item.icone }} text-white"></i>
                         </div>
-                        <div class="flex-1">
-                            <div class="flex flex-wrap gap-2 mb-2">
-                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold text-white"
-                                    style="background: linear-gradient(135deg, #3b82f6, #8b5cf6);">
-                                    Programa Nascer · FAPESC + SEBRAE/SC
-                                </span>
-                                <span class="inline-block px-3 py-1 rounded-full text-xs font-semibold dark:bg-purple-900/50 bg-purple-100 dark:text-purple-300 text-purple-700 border dark:border-purple-700 border-purple-300">
-                                    VI Edição 2025 · Pré-Incubação
-                                </span>
-                            </div>
-                            <h3 class="text-2xl sm:text-3xl font-black gradient-text">AccessFive</h3>
-                            <p class="dark:text-slate-400 text-gray-500 text-sm mt-1">
-                                Inteligência Artificial a Serviço da Segurança Industrial
-                            </p>
-                        </div>
+                        <h3 class="dark:text-white text-gray-900 font-bold text-base leading-tight">{{ item.titulo }}</h3>
                     </div>
-
-                    <!-- Conteúdo principal: problema + solução -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
-
-                        <!-- Problema: contexto de mercado -->
-                        <div>
-                            <h4 class="dark:text-white text-gray-900 font-semibold text-sm mb-4 flex items-center gap-2">
-                                <i class="fas fa-triangle-exclamation text-red-500"></i>
-                                O Problema
-                            </h4>
-                            <p class="dark:text-slate-300 text-gray-700 leading-relaxed text-sm mb-4">
-                                Acidentes de trabalho no Brasil representam um problema crítico e custoso.
-                                A fiscalização humana é falha — e as falhas custam vidas e bilhões.
-                            </p>
-                            <!-- Stats impacto -->
-                            <div class="grid grid-cols-3 gap-2">
-                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
-                                    <div class="text-lg font-black text-red-500">623k</div>
-                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">acidentes/ano</div>
-                                </div>
-                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
-                                    <div class="text-lg font-black text-red-500">2.583</div>
-                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">mortes em 2024</div>
-                                </div>
-                                <div class="dark:bg-red-950/40 bg-red-50 rounded-xl p-3 text-center border dark:border-red-900/50 border-red-200">
-                                    <div class="text-lg font-black text-red-500">R$115bi</div>
-                                    <div class="dark:text-slate-400 text-gray-500 text-xs mt-0.5">custo anual</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Solução: AccessFive -->
-                        <div>
-                            <h4 class="dark:text-white text-gray-900 font-semibold text-sm mb-4 flex items-center gap-2">
-                                <i class="fas fa-microchip text-blue-500"></i>
-                                A Solução — AccessFive
-                            </h4>
-                            <p class="dark:text-slate-300 text-gray-700 leading-relaxed text-sm mb-4">
-                                Sistema de <strong class="dark:text-white text-gray-900">segurança preditiva em tempo real</strong>
-                                que usa câmeras CCTV e sensores IoT já existentes nas empresas para detectar automaticamente
-                                o não-uso de EPIs e zonas de risco, disparando alertas imediatos ao supervisor.
-                            </p>
-                            <!-- Como funciona -->
-                            <div class="space-y-2">
-                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
-                                    <span class="w-5 h-5 rounded-full bg-blue-600 text-white flex items-center justify-center font-bold flex-shrink-0">1</span>
-                                    <span><strong>Captação</strong> — câmeras CCTV e sensores IoT existentes</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
-                                    <span class="w-5 h-5 rounded-full bg-purple-600 text-white flex items-center justify-center font-bold flex-shrink-0">2</span>
-                                    <span><strong>Processamento</strong> — detecção de EPIs e zonas de risco em tempo real</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
-                                    <span class="w-5 h-5 rounded-full bg-indigo-600 text-white flex items-center justify-center font-bold flex-shrink-0">3</span>
-                                    <span><strong>Análise Preditiva</strong> — IA cruza dados e dispara Gatilho de Risco</span>
-                                </div>
-                                <div class="flex items-center gap-2 text-xs dark:text-slate-300 text-gray-700">
-                                    <span class="w-5 h-5 rounded-full bg-green-600 text-white flex items-center justify-center font-bold flex-shrink-0">4</span>
-                                    <span><strong>Ação Imediata</strong> — alerta sonoro in loco + notificação ao supervisor</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Footer: stats da oportunidade + programa -->
-                    <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-6 border-t dark:border-slate-700 border-gray-200">
-                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
-                            <div class="text-base font-black gradient-text">Indústria 4.0</div>
-                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Segmento</div>
-                        </div>
-                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
-                            <div class="text-base font-black gradient-text">+28,5%/ano</div>
-                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Crescimento IA/Segurança</div>
-                        </div>
-                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
-                            <div class="text-base font-black gradient-text">FAPESC</div>
-                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Fomento SC</div>
-                        </div>
-                        <div class="dark:bg-slate-900/60 bg-gray-50 rounded-xl p-3 text-center border dark:border-slate-700 border-gray-200">
-                            <div class="text-base font-black gradient-text">SEBRAE/SC</div>
-                            <div class="dark:text-slate-400 text-gray-500 text-xs mt-1">Mentoria</div>
-                        </div>
-                    </div>
-
-                    <!-- Tags de tecnologia -->
-                    <div class="flex flex-wrap gap-2 mt-5">
-                        {% for tag in accessfive_tags %}
-                        <span class="px-2.5 py-1 text-xs rounded-full dark:bg-blue-950/50 bg-blue-50 dark:text-blue-300 text-blue-700 border dark:border-blue-800/40 border-blue-200">{{ tag }}</span>
-                        {% endfor %}
-                    </div>
-
+                    <span class="inline-block px-3 py-1 mb-3 rounded-full text-xs font-semibold text-white bg-gradient-to-r {{ item.cor_gradiente }}">
+                        {{ item.badge }}
+                    </span>
+                    <p class="dark:text-slate-400 text-gray-600 text-sm leading-relaxed">
+                        {{ item.descricao }}
+                    </p>
                 </div>
             </div>
+            {% endfor %}
         </div>
     </div>
 </section>
