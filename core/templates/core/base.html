@@ -100,6 +100,30 @@
             30% { transform: translateY(-6px); }
         }
 
+        /* Tela ampliada do QR Code: ocupa uma viewport sem esconder ações. */
+        .whatsapp-qr-card {
+            max-height: calc(100dvh - 2rem);
+            overflow-y: auto;
+        }
+        .whatsapp-qr-image {
+            width: min(20rem, 70vw) !important;
+            height: auto !important;
+            aspect-ratio: 1;
+            object-fit: contain;
+        }
+        @media (max-height: 720px) {
+            .whatsapp-qr-card { padding-top: 1rem !important; padding-bottom: 1rem !important; }
+            .whatsapp-qr-icon { width: 3rem !important; height: 3rem !important; margin-bottom: 0.5rem !important; }
+            .whatsapp-qr-icon i { font-size: 1.75rem !important; }
+            .whatsapp-qr-title { font-size: 1.5rem !important; line-height: 2rem !important; }
+            .whatsapp-qr-description { margin-top: 0.35rem !important; font-size: 0.95rem !important; line-height: 1.4rem !important; }
+            .whatsapp-qr-phone { margin-top: 0.35rem !important; font-size: 1rem !important; }
+            .whatsapp-qr-link { margin-top: 0.65rem !important; }
+            .whatsapp-qr-image { width: min(15rem, 60vw) !important; }
+            .whatsapp-qr-action { margin-top: 0.65rem !important; padding: 0.75rem 1.5rem !important; font-size: 1rem !important; }
+            .whatsapp-qr-help { margin-top: 0.4rem !important; font-size: 0.75rem !important; }
+        }
+
         {% block extra_style %}{% endblock %}
     </style>
     {% block extra_head %}{% endblock %}
@@ -207,20 +231,64 @@
             </a>
         </div>
 
-        <!-- QR Code WhatsApp -->
-        <div class="mx-auto mb-6 max-w-xs rounded-2xl border dark:border-slate-700 border-gray-200 dark:bg-slate-800 bg-white p-5 shadow-sm">
-            <p class="dark:text-white text-gray-900 text-sm font-semibold">Fale comigo pelo WhatsApp</p>
-            <p class="dark:text-slate-400 text-gray-500 mt-1 mb-4 text-xs">Aponte a câmera do celular para iniciar uma conversa.</p>
-            <a href="https://wa.me/5548996404676" target="_blank" rel="noopener" class="inline-block rounded-xl bg-white p-2 transition-transform hover:scale-105" aria-label="Abrir conversa com Renato Teodoro no WhatsApp">
-                <img src="{% static 'core/images/qr-whatsapp-renato.png' %}" alt="QR Code para falar com Renato Teodoro pelo WhatsApp" class="mx-auto h-44 w-44 sm:h-48 sm:w-48" width="600" height="600" loading="lazy" decoding="async">
-            </a>
-        </div>
+        <!-- Acesso ao QR Code WhatsApp -->
+        <button type="button" onclick="openWhatsappQr()"
+            class="mx-auto mb-6 inline-flex items-center gap-3 rounded-xl border border-green-500/40 dark:bg-slate-800 bg-white px-5 py-3 text-left shadow-sm transition-all hover:-translate-y-0.5 hover:border-green-500 hover:shadow-md focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 dark:focus:ring-offset-slate-900"
+            aria-haspopup="dialog" aria-controls="whatsappQrModal">
+            <span class="flex h-10 w-10 items-center justify-center rounded-lg bg-green-100 text-green-600 dark:bg-green-600/20 dark:text-green-400">
+                <i class="fas fa-qrcode text-xl"></i>
+            </span>
+            <span>
+                <span class="block text-sm font-semibold dark:text-white text-gray-900">Mostrar QR Code do WhatsApp</span>
+                <span class="block text-xs dark:text-slate-400 text-gray-500">Abrir em tela ampliada</span>
+            </span>
+        </button>
 
         <p class="dark:text-slate-600 text-gray-400 text-xs">
             &copy; 2025 Renato Teodoro &bull; Feito com <i class="fas fa-heart text-red-500 text-xs"></i> Django + Tailwind CSS
         </p>
     </div>
 </footer>
+
+<!-- ===== QR CODE WHATSAPP EM TELA AMPLIADA ===== -->
+<div id="whatsappQrModal"
+    class="fixed inset-0 z-[80] hidden items-center justify-center overflow-y-auto bg-slate-950/85 p-4 backdrop-blur-sm sm:p-8"
+    role="dialog" aria-modal="true" aria-hidden="true" aria-labelledby="whatsappQrTitle" aria-describedby="whatsappQrDescription"
+    onclick="if (event.target === this) closeWhatsappQr()">
+    <div class="whatsapp-qr-card relative my-auto w-full max-w-xl rounded-3xl border dark:border-slate-600 border-gray-200 dark:bg-slate-900 bg-white p-6 text-center shadow-2xl sm:p-10">
+        <button type="button" onclick="closeWhatsappQr()"
+            class="absolute right-4 top-4 flex h-11 w-11 items-center justify-center rounded-full dark:bg-slate-800 bg-gray-100 dark:text-slate-300 text-gray-600 transition-colors hover:bg-red-500 hover:text-white focus:outline-none focus:ring-2 focus:ring-red-500"
+            aria-label="Fechar tela do QR Code">
+            <i class="fas fa-times text-lg"></i>
+        </button>
+
+        <div class="whatsapp-qr-icon mx-auto mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-green-100 text-green-600 dark:bg-green-600/20 dark:text-green-400">
+            <i class="fab fa-whatsapp text-4xl"></i>
+        </div>
+        <h2 id="whatsappQrTitle" class="whatsapp-qr-title pr-8 text-2xl font-bold dark:text-white text-gray-900 sm:pr-0 sm:text-3xl">
+            Fale comigo pelo WhatsApp
+        </h2>
+        <p id="whatsappQrDescription" class="whatsapp-qr-description mx-auto mt-3 max-w-md text-base leading-relaxed dark:text-slate-300 text-gray-600 sm:text-lg">
+            Aponte a câmera do celular para o QR Code e inicie uma conversa diretamente comigo.
+        </p>
+        <p class="whatsapp-qr-phone mt-3 text-lg font-semibold text-green-600 dark:text-green-400 sm:text-xl">(48) 99640-4676</p>
+
+        <a href="https://wa.me/5548996404676" target="_blank" rel="noopener"
+            class="whatsapp-qr-link mx-auto mt-6 inline-block rounded-2xl bg-white p-3 shadow-lg ring-1 ring-gray-200 transition-transform hover:scale-[1.02] focus:outline-none focus:ring-4 focus:ring-green-500/40"
+            aria-label="Abrir conversa com Renato Teodoro no WhatsApp">
+            <img src="{% static 'core/images/qr-whatsapp-renato.png' %}"
+                alt="QR Code para falar com Renato Teodoro pelo WhatsApp"
+                class="whatsapp-qr-image" width="600" height="600" decoding="async">
+        </a>
+
+        <a href="https://wa.me/5548996404676" target="_blank" rel="noopener"
+            class="whatsapp-qr-action mx-auto mt-6 flex w-full max-w-sm items-center justify-center gap-3 rounded-xl bg-green-600 px-6 py-4 text-base font-semibold text-white shadow-lg transition-all hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-green-500/40 sm:text-lg">
+            <i class="fab fa-whatsapp text-2xl"></i>
+            Abrir conversa no WhatsApp
+        </a>
+        <p class="whatsapp-qr-help mt-4 text-sm dark:text-slate-500 text-gray-500">Pressione Esc ou toque fora da tela para fechar.</p>
+    </div>
+</div>
 
 <!-- ===== CHATBOT BOTÃO FLUTUANTE ===== -->
 <button id="chatbotToggle" onclick="toggleChat()" title="Abrir assistente do portfólio"
@@ -309,6 +377,35 @@ document.getElementById('mobileMenuBtn').addEventListener('click', function() {
     var isHidden = menu.classList.contains('hidden');
     menu.classList.toggle('hidden');
     icon.className = isHidden ? 'fa-solid fa-times' : 'fa-solid fa-bars';
+});
+
+// ===== QR CODE WHATSAPP =====
+var whatsappQrPreviousFocus = null;
+
+function openWhatsappQr() {
+    var modal = document.getElementById('whatsappQrModal');
+    whatsappQrPreviousFocus = document.activeElement;
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    modal.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+    modal.querySelector('button[aria-label="Fechar tela do QR Code"]').focus();
+}
+
+function closeWhatsappQr() {
+    var modal = document.getElementById('whatsappQrModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    modal.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    if (whatsappQrPreviousFocus) whatsappQrPreviousFocus.focus();
+}
+
+document.addEventListener('keydown', function(event) {
+    var modal = document.getElementById('whatsappQrModal');
+    if (event.key === 'Escape' && !modal.classList.contains('hidden')) {
+        closeWhatsappQr();
+    }
 });
 
 // ===== CHATBOT =====
