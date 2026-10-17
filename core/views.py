@@ -32,8 +32,9 @@ Email: renatoteodoro2@gmail.com
 Telefone: (48) 99640-4676
 
 PERFIL:
-Profissional com mais de 25 anos de experiência em eletrônica, telecomunicações, segurança eletrônica e TI.
-Em transição complementar para desenvolvimento de software. Stack principal: Python, Django, DRF, LangChain, OpenAI API, RAG, Agentes de IA, PostgreSQL, AWS, Git.
+Desenvolvedor Python com foco em Django, APIs REST e IA aplicada. Constrói sistemas que integram backend, LLMs e IoT, do protótipo ao deploy.
+Tem 28 anos de trajetória em tecnologia desde 1998, com experiência anterior em eletrônica, telecomunicações, segurança eletrônica e treinamento técnico.
+Stack principal: Python, Django, DRF, FastAPI, LangChain, OpenAI API, RAG, agentes de IA, PostgreSQL, Docker, cloud e IoT.
 
 EXPERIÊNCIAS:
 1. Intelbras S/A (Jun/2025–Maio/2026): Analista de Treinamento Técnico Pleno. Desenvolvimento trilhas EAD/presencial para BU-SEG, conteúdos humanizados, gestão instrutores.
@@ -68,12 +69,12 @@ CERTIFICAÇÕES:
 - NR35 – Trabalho em Altura
 
 SKILLS TÉCNICAS:
-Backend: Python (90%), Django (85%), DRF (80%), FastAPI (65%)
-IA/ML: LangChain (75%), OpenAI API (80%), RAG (70%), Agentes de IA (65%)
-Database: PostgreSQL (80%), SQLite (90%), Redis (55%)
-DevOps: AWS EC2/S3 (60%), Docker (65%), Git/GitHub (85%), Railway/Render (70%)
-Frontend: HTML5/CSS3 (80%), Tailwind CSS (75%), JavaScript (60%)
-Hardware/IoT: Arduino (85%), ESP32 (80%), MQTT (75%), C/C++ (70%)
+Backend e APIs: Python, Django, Django REST Framework, FastAPI e APIs REST
+IA aplicada: LLMs, LangChain, OpenAI API, RAG, agentes de IA e busca vetorial
+Dados e mensageria: PostgreSQL, TimescaleDB, SQLite, Redis, ChromaDB, RabbitMQ, Celery e MQTT
+Infraestrutura e deploy: Docker, Linux, Nginx, Traefik, Cloudflare, AWS, Fly.io e Railway
+Interfaces e automação: HTML5, CSS3, Tailwind CSS, htmx, JavaScript, dashboards e Playwright
+IoT e sistemas embarcados: Arduino, ESP32, sensores, protocolos seriais e C/C++
 """
 
 # ---------------------------------------------------------------------------
@@ -232,68 +233,70 @@ PROJETOS = [
 
 SKILLS = [
     {
-        'categoria': 'Backend',
+        'categoria': 'Backend e APIs',
         'icone': 'fa-server',
         'cor': 'text-blue-400',
-        'tecnologias': [
-            {'nome': 'Python', 'nivel': 90},
-            {'nome': 'Django', 'nivel': 85},
-            {'nome': 'Django REST Framework', 'nivel': 80},
-            {'nome': 'FastAPI', 'nivel': 65},
-        ],
+        'descricao': (
+            'Desenvolvo aplicações web, APIs e integrações com autenticação, permissões, '
+            'regras de negócio e processamento assíncrono.'
+        ),
+        'tecnologias': ['Python', 'Django', 'DRF', 'FastAPI', 'APIs REST'],
+        'projetos': 'Portfólio · PlannerEdu · EnergIA · Beton Dekor',
     },
     {
-        'categoria': 'IA / Machine Learning',
+        'categoria': 'IA aplicada',
         'icone': 'fa-brain',
         'cor': 'text-purple-400',
-        'tecnologias': [
-            {'nome': 'LangChain', 'nivel': 75},
-            {'nome': 'OpenAI API', 'nivel': 80},
-            {'nome': 'RAG', 'nivel': 70},
-            {'nome': 'Agentes de IA', 'nivel': 65},
-        ],
+        'descricao': (
+            'Projeto soluções com LLMs, RAG e agentes conectados a bases de conhecimento, '
+            'memória, busca vetorial e voz.'
+        ),
+        'tecnologias': ['LLMs', 'LangChain', 'RAG', 'Agentes de IA', 'OpenAI API', 'Busca vetorial'],
+        'projetos': 'WathsBotApp · ADA · EnergIA · Portfólio',
     },
     {
-        'categoria': 'Database',
+        'categoria': 'Dados e mensageria',
         'icone': 'fa-database',
         'cor': 'text-green-400',
-        'tecnologias': [
-            {'nome': 'PostgreSQL', 'nivel': 80},
-            {'nome': 'SQLite', 'nivel': 90},
-            {'nome': 'Redis', 'nivel': 55},
-        ],
+        'descricao': (
+            'Estruturo dados relacionais, séries temporais, cache, filas e bases vetoriais '
+            'para sistemas integrados.'
+        ),
+        'tecnologias': ['PostgreSQL', 'TimescaleDB', 'Redis', 'ChromaDB', 'RabbitMQ', 'Celery', 'MQTT'],
+        'projetos': 'EnergIA · WathsBotApp · sistemas Django',
     },
     {
-        'categoria': 'DevOps & Cloud',
-        'icone': 'fa-cloud',
-        'cor': 'text-orange-400',
-        'tecnologias': [
-            {'nome': 'AWS (EC2, S3)', 'nivel': 60},
-            {'nome': 'Docker', 'nivel': 65},
-            {'nome': 'Git / GitHub', 'nivel': 85},
-            {'nome': 'Railway / Render', 'nivel': 70},
-        ],
-    },
-    {
-        'categoria': 'Frontend',
-        'icone': 'fa-code',
-        'cor': 'text-cyan-400',
-        'tecnologias': [
-            {'nome': 'HTML5 / CSS3', 'nivel': 80},
-            {'nome': 'Tailwind CSS', 'nivel': 75},
-            {'nome': 'JavaScript', 'nivel': 60},
-        ],
-    },
-    {
-        'categoria': 'Hardware / IoT',
+        'categoria': 'IoT e sistemas embarcados',
         'icone': 'fa-microchip',
         'cor': 'text-yellow-400',
-        'tecnologias': [
-            {'nome': 'Arduino', 'nivel': 85},
-            {'nome': 'ESP32', 'nivel': 80},
-            {'nome': 'MQTT', 'nivel': 75},
-            {'nome': 'C / C++', 'nivel': 70},
-        ],
+        'descricao': (
+            'Integro sensores e dispositivos ao backend, ao banco de dados e aos painéis '
+            'de acompanhamento.'
+        ),
+        'tecnologias': ['Arduino', 'ESP32', 'C / C++', 'Sensores', 'Protocolos seriais', 'MQTT'],
+        'projetos': 'EnergIA · eletrônica · telecomunicações',
+    },
+    {
+        'categoria': 'Infraestrutura e deploy',
+        'icone': 'fa-cloud',
+        'cor': 'text-orange-400',
+        'descricao': (
+            'Publico aplicações com containers, domínio, HTTPS, proxy reverso e bancos '
+            'em cloud ou VPS.'
+        ),
+        'tecnologias': ['Docker', 'Linux', 'Nginx', 'Traefik', 'Cloudflare', 'AWS', 'Fly.io'],
+        'projetos': 'Portfólio · EnergIA · Beton Dekor · ADA',
+    },
+    {
+        'categoria': 'Interfaces e automação',
+        'icone': 'fa-code',
+        'cor': 'text-cyan-400',
+        'descricao': (
+            'Construo interfaces responsivas, dashboards e automações de navegador '
+            'como apoio ao backend.'
+        ),
+        'tecnologias': ['Tailwind CSS', 'htmx', 'JavaScript', 'Dashboards', 'Playwright'],
+        'projetos': 'PlannerEdu · Beton Dekor · WathsBotApp',
     },
 ]
 
@@ -579,7 +582,7 @@ def _keyword_response(message: str) -> str:
 
     if any(w in msg for w in ['experiência', 'experiencia', 'trabalhou', 'empresa', 'carreira', 'histórico']):
         return (
-            'Renato tem 25+ anos de experiência profissional. Trabalhou na Intelbras (Analista de Treinamento), '
+            'Renato tem 28 anos de trajetória em tecnologia, desde 1998. Trabalhou na Intelbras (Analista de Treinamento), '
             'Claro Brasil (Técnico IAT), atuou como autônomo em segurança eletrônica (onde participou do '
             'Programa Nascer com o projeto AccessFive — IA para segurança industrial), Ezentis Brasil (torres celulares), FIESC-SENAI '
             '(professor/coordenador) e Dígitro Tecnologia (técnico eletrônica).'
@@ -628,9 +631,9 @@ def _keyword_response(message: str) -> str:
 
     if any(w in msg for w in ['skill', 'tecnologia', 'stack', 'linguagem', 'python', 'django']):
         return (
-            'Stack principal de Renato: Python, Django, Django REST Framework, LangChain, OpenAI API, RAG, '
-            'PostgreSQL, AWS (EC2/S3), Git/GitHub, Tailwind CSS. Também domina Arduino, ESP32 e MQTT '
-            'para projetos IoT.'
+            'Renato trabalha com Python, Django, Django REST Framework e FastAPI no backend; LLMs, LangChain, '
+            'OpenAI API, RAG e busca vetorial em IA aplicada; PostgreSQL, Redis e TimescaleDB em dados; '
+            'Docker e cloud no deploy. Também integra Arduino, ESP32 e MQTT em projetos IoT.'
         )
 
     if any(w in msg for w in ['formação', 'formacao', 'estudo', 'faculdade', 'curso', 'certificação', 'ifsc']):
@@ -648,9 +651,9 @@ def _keyword_response(message: str) -> str:
 
     if any(w in msg for w in ['quem', 'sobre', 'renato', 'perfil', 'apresentação']):
         return (
-            'Renato Teodoro é um profissional com 25+ anos de experiência em eletrônica, telecomunicações e '
-            'segurança eletrônica, em transição para desenvolvimento de software e IA. Combina sólido background '
-            'técnico em hardware com habilidades crescentes em Python, Django, APIs e Inteligência Artificial.'
+            'Renato Teodoro é desenvolvedor Python com foco em Django, APIs REST e IA aplicada. Constrói sistemas '
+            'que integram backend, LLMs e IoT, do protótipo ao deploy. Sua trajetória em tecnologia começou em '
+            '1998 e inclui eletrônica, telecomunicações, segurança eletrônica e treinamento técnico.'
         )
 
     if any(w in msg for w in ['ia', 'inteligência artificial', 'langchain', 'openai', 'rag', 'agente']):
